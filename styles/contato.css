@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    background-color:grey;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: rgb(235, 237, 237);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+form fieldset{
+    display: flex;
+}
+
+.form-fieldset-message{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+.text-area{
+    height:18rem;
+
+}
