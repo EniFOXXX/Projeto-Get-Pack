@@ -10,7 +10,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: white;
+    background-color: rgb(114, 93, 93);
     
 }
 
@@ -35,21 +35,27 @@ li{
     transition: 0.2s;
     
 }
+main{
+    display: flex;
+    
+}
+
+
 
 .principal{
-    /*background-color: rgb(235, 237, 237);*/
     margin-top: 0px auto;
     width: 100%;
     height: 800px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-around;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 
 
 
 }
 .blog{
-   background-color: rgb(227, 200, 191);
+   background-color: rgba(227, 200, 191, 0.794);
    color: white;
    width: 500px;
    height: 800px;
@@ -59,11 +65,9 @@ li{
 .title-blog{
     color:white;
     padding-bottom: 50px;
+    padding-top: 10px;
 }
-main{
-    display: flex;
-    justify-content: center;
-}
+
 ul{
     display: flex;
     align-items: center;
