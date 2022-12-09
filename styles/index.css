@@ -45,7 +45,8 @@ main img{
 section{
     display:flex;
     align-items: flex-end;
-    background: linear-gradient(to right, #0f0c29,#302b63,#24243e);
+    /*background: linear-gradient(to right, #0f0c29,#302b63,#24243e);*/
+    background: radial-gradient(circle, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 37%, rgba(36,36,62,1) 100%);
 }
  
 .principal{
@@ -55,7 +56,8 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: radial-gradient(circle, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 37%, rgba(36,36,62,1) 100%);
+    /*background: linear-gradient(to right, #0f0c29, #302b63, #24243e);*/
 
 
     
