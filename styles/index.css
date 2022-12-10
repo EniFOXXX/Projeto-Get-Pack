@@ -36,12 +36,14 @@ li{
     transition: 0.2s;
     
 }
+.logo{
+    padding-left: 20px;
+}
 section{
     display:flex;
     align-items: flex-end;
-    /*background: linear-gradient(to right, #0f0c29,#302b63,#24243e);*/
-    background: radial-gradient(circle, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 37%, rgba(36,36,62,1) 100%);
-}
+    background-image: url("../assets/images/fundo.jpg")
+    }
  
 .principal{
     margin-top: 0px auto;
@@ -50,9 +52,7 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: radial-gradient(circle, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 37%, rgba(36,36,62,1) 100%);
-    /*background: linear-gradient(to right, #0f0c29, #302b63, #24243e);*/
-}
+   }
 
 p{
     color:rgb(251, 248, 248); 
@@ -87,15 +87,25 @@ h2{
     font-size: 23px;
     margin: 10px;
 }
-.blog {
-   background-color: rgba(227, 200, 191, 0.794);
+.blog{
+   background-color: rgba(255, 255, 255, 0.3);
    color: white;
    width: 500px;
    height: 1200px;   
    border-radius: 30px ;
-   
-   
-   
+   text-decoration: none;
+   }
+.link-blog a{
+    text-decoration: none;
+    color:aqua;
+    background-color: blue;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 10px;
+   border-radius: 20px;
+   margin-bottom: 200px;
+    
 }
 .title-blog{
     color:white;
@@ -107,14 +117,7 @@ h2{
     border-radius: 10px 10px 0px 0px;
 
 }
-.blog p a{
-    display: flex;
-   flex-direction: column;
-   padding-left: 20px;
-   padding-top: 20px;
-   padding-bottom: 250px;
-    
-}
+
 
 ul{
     display: flex;
@@ -126,7 +129,7 @@ ul{
 
 footer{
     background-color: rgba(35, 91, 170, 0.818);
-    height: 140px;
+    height: 142px;
     }
 .redes{
     display: flex;
@@ -154,7 +157,7 @@ footer{
 }
 .copy{
     font-size: 10px;
-    padding-left: 220px;
+    padding-left: 100px;
     
 }
 .icon-contato{
