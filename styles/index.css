@@ -16,24 +16,27 @@ header{
 }
 
 
-.menu li a{
-    margin-left: 1.5em;
+.menu  li a{
     font-weight: 700;
     color: rgb(88, 143, 220);
     text-decoration: none;
     
-
 }
 li{
     list-style-type: none;
-    margin-right: 20px;
+    padding: 30px;
+    
 }
 .menu ul li a:hover{
     background-color: rgb(88, 143, 220); ;
     border-radius: 10px;
     color:white;
-    padding: 10px;
+    padding: px;
     transition: 0.2s;
+    
+    
+    
+    
     
 }
 .logo{
