@@ -96,9 +96,10 @@ label {
 .text-area {
   height: 100%;
   padding: 5px;
-  margin: 1px;
   border-radius: 12px;
   width: 100%;
+  margin-top: 2rem;
+  height: 11rem;
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 768px) {
