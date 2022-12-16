@@ -4,72 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/contato.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../../styles/contato.css" />
+    <link rel="stylesheet" href="../../styles/index.css" />
     <title>Contato</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="../../assets/images/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
-      <nav>
-       <ul>
-           <li><a href="../../index.html">Início</a></li>
-           <li><a href="../sobre/sobre.html">Sobre</a></li>
-           <li><a href="../clientes/clientes.html">Clientes</a></li>
-           <li><a href="../blog/blog.html">Blog</a></li>
-           <li><a href="../contato/contato.html">Contato</a></li>
-       </ul>
+      <div class="container-logo">
+        <a href="index.html"
+        ><img
+          src="../../assets/images/GETPACK1-LOGO 1.png"
+          alt="logo GetPack"
+          style="width: 151px; height: 42px"
+      /></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class=""><a href="../../index.html">Início</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../clientes/clientes.html">Clientes</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="../contato/contato.html">Contato</a></li>
+        </ul>
       </nav>
-   </header>
-    <main class="container-main">
-      CONTATO
-      <form action="">
-        <fieldset class="form-fieldset-name">
-          <label>Nome Completo</label>
-          <br />
-          <input type="text" placeholder="Digite seu nome Completo" />
-        </fieldset>
-        <fieldset class="form-fieldset-email">
-          <label>E-mail</label>
-          <br />
-          <input type="email" placeholder="Digite seu E-mail" />
-        </fieldset>
-        <fieldset class="form-fieldset-email">
-          <label> Telefone </label>
-          <br />
-          <input type="tel" placeholder="Digite seu n° de telefone" />
-        </fieldset>
-        <fieldset class="form-fieldset-message">
-          <label>Mensagem</label>
-          <br />
-          <textarea
-            class="text-area"
-            name="msg"
-            id="msg"
-            cols="30"
-            rows="8"
-            placeholder="Digite aqui sua mensagem, responderemos assim que possível"
-          ></textarea>
-        </fieldset>
-      </form>
+    </header>
+    <main class="main-container">
+      <h1>FALE CONOSCO</h1>
+      <div class="main-container-content">
+        <div class="container-image">
+          <img src="/assets/images/email_ss_1920-1920x1024.png" />
+        </div>
+        <div class="form-container">
+          <form action="">
+            <fieldset class="form-fieldset-name">
+              <label>Nome</label>
+              <br />
+              <input type="text" placeholder="Digite seu nome Completo" />
+            </fieldset>
+            <fieldset class="form-fieldset-email">
+              <label>E-mail</label>
+              <br />
+              <input type="email" placeholder="Digite seu E-mail" />
+            </fieldset>
+            <fieldset class="form-fieldset-email">
+              <label> Telefone </label>
+              <br />
+              <input type="tel" placeholder="Digite seu n° de telefone" />
+            </fieldset>
+            <fieldset class="form-fieldset-message">
+              <label>Mensagem</label>
+              <textarea
+                class="text-area"
+                name="msg"
+                id="msg"
+                cols="30"
+                rows="8"
+                placeholder="Digite aqui sua mensagem, responderemos assim que possível"
+              ></textarea>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
-      <a href="https://www.facebook.com/" target="_blank"><img src="img/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a>
-      <a href="https://www.instagram.com/"target="_blank"><img src="img/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a>
-      <a href="https://twitter.com/"target="_blank"><img src="img/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a>
-      <a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="img/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a>
+      <div class="redes">
+      <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="../../assets/images/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
+      <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="../../assets/images/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
+      <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="../../assets/images/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
+      <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="../../assets/images/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
       
-      <div><p><img src="img/ico_tel.png" alt="ícone de telefone" style="width:29px;height:29px;">(22)222-2222</p><a href="tel:+55222222222">Ligar</a>
-          <p><img src="img/e-mail.png" alt="ícone de e-mail " style="width:29px;height:29px;"><a href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-          <p><img src="img/ico_localização.png" alt="ícone de localização" style="width:29px;height:29px;">Rua das Palmeiras,123 - Centro</p>
       </div>
-      <p>Copyright 2022 ©</p>
       
+      <div class="contato">
+          <p><img class="icon-contato" src="../../assets/images/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
+          <p><img class="icon-contato" src="../../assets/images/e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
+          <p><img class="icon-contato" src="../../assets/images/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
+          <p class="copy">Copyright 2022 ©</p>
+      </div>
+                          
   </footer>
   </body>
 </html>
+
