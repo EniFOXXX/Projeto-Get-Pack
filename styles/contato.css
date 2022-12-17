@@ -23,6 +23,12 @@ h1 {
   font-size: 50px;
   text-shadow: 0.1rem 0.1rem var(--grey);
 }
+.container-header{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -102,26 +108,29 @@ label {
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 768px) {
-    header{
-        width: 100%;
-        display: flex;  
-        background-color: cornflowerblue;   
-    }
-.container-logo{
-    height: 5rem;
-    width:fit-content;
-    display: flex;
-    align-items: center;
-}
-    .menu ul{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: fit-content;
-        font-size: 12px;
-        margin-left: -15rem;
 
+    .container-logo img{
+      width: 120px;
+      margin-top: 1rem;
     }
+
+      .menu ul li{
+        margin:0;
+        padding: 0;
+      }
+
+    .menu ul li a{
+      font-size: 12px;
+      margin-left: 7px;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(88, 143, 220); ;
+      border-radius: 10px;
+      color:white;
+      padding: px;
+      transition: 0.2s;      
+  }
 
   .main-container {
     display: flex;
