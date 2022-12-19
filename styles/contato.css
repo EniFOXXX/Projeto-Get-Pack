@@ -17,16 +17,11 @@
   --red: #ff3333;
   --grey: #696969;
 }
-
-h1 {
-  font-weight: 900;
-  font-size: 50px;
-  text-shadow: 0.1rem 0.1rem var(--grey);
-}
 .container-header{
   display: flex;
   align-items: center;
   width: 100vw;
+  justify-content: space-between;
 }
 
 .main-container {
@@ -39,10 +34,16 @@ h1 {
   color: var(--white);
   font-weight: 400;
 }
+.main-container h1 {
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: 0.1rem 0.1rem var(--grey);
+  font-family: Raleway ;
+  padding: 30px;
+}
 .main-container-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 5rem;
   border-radius: 40px;
   border: solid 10px;
   justify-items: center;
@@ -108,6 +109,7 @@ label {
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 768px) {
+  
 
     .container-logo img{
       width: 120px;
