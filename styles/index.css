@@ -109,7 +109,7 @@ h2{
 .link-blog a{
     text-decoration: none;
     font-weight: 600;
-    color:rgb(17, 16, 16);  
+    color:rgb(17, 16, 16);
     background-image: url("../assets/images/fondo-link.jpg");
     display: flex;
    flex-direction: column;
