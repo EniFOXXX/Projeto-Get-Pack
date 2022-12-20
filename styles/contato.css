@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
- align-items: center;
+  align-items: center;
 }
 
 .main-container {
@@ -114,9 +114,8 @@ label {
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 768px) {
-
-  body{
-    width: 100vw
+  body {
+    width: 100vw;
   }
   .container-logo img {
     width: 120px;
@@ -183,19 +182,26 @@ label {
     height: 180px;
     margin: 0;
   }
-
-  footer .redes {
-    background-color: var(--backgroundSecondaryColor);
-  }
-  footer .contato {
-    background-color: var(--backgroundSecondaryColor);
+  .footer {
     display: flex;
     flex-direction: column;
+    background-color: var(--backgroundSecondaryColor);
+    height: fit-content;
   }
 
-  .contato a {
-    height: fit-content;
+  .contato {
     display: flex;
+    margin: auto;
+    padding: 0;
+    flex-direction: column;
     align-items: center;
+  }
+  .contato a {
+    margin-left: 2rem;
+  }
+
+  .contato p {
+    display: flex;
+    align-self: flex-start;
   }
 }
