@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+
     <style>
+
+        header{
+            border-bottom: solid #000;
+        }
+
+        .buscar{
+            height: 2rem;
+            width: 15rem;
+            padding-left: 0.5rem;
+        }
+
         footer{
             background-color: grey
         }
@@ -14,7 +32,8 @@
             color:rgb(1, 0, 0)
             
         }
-        section{
+        .container_1, 
+        .container_2 {
             background-color: rgb(235, 237, 237);
         }
     </style>
@@ -22,88 +41,149 @@
 <body>
 
     <!--CABEÇALHO-------------------------->
+    <!--logo e menu-->
     <header>
-        <a href="index.html"><img src="../../assets/images/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
-        <nav>
-         <ul>
-             <li><a href="../../index.html">Início</a></li>
-             <li><a href="../sobre/sobre.html">Sobre</a></li>
-             <li><a href="../clientes/clientes.html">Clientes</a></li>
-             <li><a href="../blog/blog.html">Blog</a></li>
-             <li><a href="../contato/contato.html">Contato</a></li>
-         </ul>
-        </nav>
-     </header>
+        <a class="logo" href="../../index.html"><img src="MACOSX_/img/header/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
+       
+        <input class="buscar" placeholder="buscar..." type="text">
+
+        <nav class="menu">
+        <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../../pages/clientes/clientes.html">Clientes</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+        </ul>
+       </nav>
+    </header>
 
 
 
     <!--CORPO----------------------------->
 
-    <main>
-        <div class="banner">
-            <h2 class="banner_tittle">Controle de acesso em Condomímio</h2>
-            <h3 class="banner_text">Lorem ipsum dolor sit amet conse<br>
+    <main class="corpo">
+
+        <!--CARROSSEL------------------->
+
+        <section class="carrossel">
+            <div class="slide1">
+                <h2 class="banner_tittle1">Controle de acesso em Condomímio</h2>
+                <h3 class="banner_text1">
+                Lorem ipsum dolor sit amet conse<br>
                 ctetur adipisicing elit. Veniam<br>
                 nulla atque, est alias ad aspernatur<br>
                 iusto natus ipsa cumque nemo <br>
                 explicabo consequatur veritatis
-            </h3>
-            <button class="banner_bot">Mais+</button>
-        </div>
+                </h3>
+            </div>
+
+            <div class="slide2" style="display: none;">
+                <h2 class="banner_tittle2">Controle de acesso em Condomímio</h2>
+                <h3 class="banner_text2">
+                Lorem ipsum dolor sit amet conse<br>
+                ctetur adipisicing elit. Veniam<br>
+                nulla atque, est alias ad aspernatur<br>
+                iusto natus ipsa cumque nemo <br>
+                explicabo consequatur veritatis
+                </h3>
+            </div>
+
+            <div class="slide3" style="display: none;">
+                <h2 class="banner_tittle3">Controle de acesso em Condomímio</h2>
+                <h3 class="banner_text3">
+                Lorem ipsum dolor sit amet conse<br>
+                ctetur adipisicing elit. Veniam<br>
+                nulla atque, est alias ad aspernatur<br>
+                iusto natus ipsa cumque nemo <br>
+                explicabo consequatur veritatis
+                </h3>
+            </div>
+            
+            <a href="#"><button class="banner_bot">Mais+</button></a>
+        </section>
 
 
-        <div>
-            <section class="container_1" name="" id="">
-                <div class="container_int1">
-                    <h3>Melhor Serviço</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet<br>
-                        consectetur adipisicing <br>
-                        elit. Optio, modi odit <br>
-                        recusandae aspernatur 
-                    </p>
-                    <img src="assets/img/service.jpg" alt="">
-                </div>
+        <!--BAND------------------->
 
-                <div>
-                    <h3>E-commerce</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet<br>
-                        consectetur adipisicing <br>
-                        elit. Optio, modi odit <br>
-                        recusandae aspernatur
-                    </p>
-                    <img src="assets/img/Ecommerce.jpg" alt="">
-                </div>
+        <div class="container_band">
 
-                <div>
-                    <h3>Demanda</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet<br>
-                        consectetur adipisicing <br>
-                        elit. Optio, modi odit <br>
-                        recusandae aspernatur
-                    </p>
-                    <img src="assets/img/demanda.jpg" alt="">
-                </div>
 
-                <div>
-                    <h3>Dropshipping</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet<br>
-                        consectetur adipisicing <br>
-                        elit. Optio, modi odit <br>
-                        recusandae aspernatur
-                    </p>
-                    <img src="assets/img/dropshipping.jpg" alt="">
-                </div>
+            <section class="container_geral1" name="" id="">
+
+                <section class="container_local1">
+
+                    <div class="container_int1">
+                        <div class="text1">
+                            <h3>Melhor Serviço</h3>
+                            <p>
+                            Lorem ipsum dolor sit, amet<br>
+                            consectetur adipisicing <br>
+                            elit. Optio, modi odit <br>
+                            recusandae aspernatur 
+                            </p>
+                        </div>                        
+                        <img class="img_band_int" src="MACOSX_/img/main/service.jpg" alt="">
+                    </div>
+    
+                    <div class="container_int2">    
+                        <div class="text2">
+                            <h3>E-commerce</h3>
+                            <p>
+                            Lorem ipsum dolor sit, amet<br>
+                            consectetur adipisicing <br>
+                            elit. Optio, modi odit <br>
+                            recusandae aspernatur
+                            </p>
+                        </div>                        
+                        <img class="img_band_int" src="MACOSX_/img/main/ecommerce.jpg" alt="">
+                    </div>
+
+                </section>
+                
+
+                <section class="container_local2">
+
+                    <div class="container_int3">
+                        <div class="text3">
+                            <h3>Demanda</h3>
+                            <p>
+                            Lorem ipsum dolor sit, amet<br>
+                            consectetur adipisicing <br>
+                            elit. Optio, modi odit <br>
+                            recusandae aspernatur
+                            </p>
+                        </div>                        
+                        <img class="img_band_int" src="MACOSX_/img/main/demanda.jpg" alt="">                        
+                    </div>
+    
+                    <div class="container_int4">    
+                        <div class="text4">
+                            <h3>Dropshipping</h3>
+                            <p>
+                            Lorem ipsum dolor sit, amet<br>
+                            consectetur adipisicing <br>
+                            elit. Optio, modi odit <br>
+                            recusandae aspernatur
+                            </p>                        
+                        </div>                    
+                        <img class="img_band_int" src="MACOSX_/img/main/dropshipping.jpg" alt="">                    
+                    </div>
+
+                </section>
+
+                
+
             </section>
 
-            <section class="container_2" name="" id="">
-                <div class="container_int2">
+            <!--LATERAL------------------->
+
+            <section class="container_geral2" name="" id="">
+
+                <div class="container_lad">
                     <h3 class="container_tittle">Escolha seu plano</h3>
                     <div>
-                        <strong >R$29,90/Mês</strong>
+                        <strong >R$29,90/Mês</strong>s
                         <p>
                             Lorem ipsum dolor sit amet<br>
                             adipisicing elit.                        
@@ -120,18 +200,24 @@
 
     <!--RODAPÉ---------------------------->
 
+
+        <!--REDESOCIAL-->
     <footer>
-        <a href="https://www.facebook.com/" target="_blank"><img src="img/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a>
-        <a href="https://www.instagram.com/"target="_blank"><img src="img/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a>
-        <a href="https://twitter.com/"target="_blank"><img src="img/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a>
-        <a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="img/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a>
-        
-        <div><p><img src="img/ico_tel.png" alt="ícone de telefone" style="width:29px;height:29px;">(22)222-2222</p><a href="tel:+55222222222">Ligar</a>
-            <p><img src="img/e-mail.png" alt="ícone de e-mail " style="width:29px;height:29px;"><a href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-            <p><img src="img/ico_localização.png" alt="ícone de localização" style="width:29px;height:29px;">Rua das Palmeiras,123 - Centro</p>
+        <div class="redes">
+            <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="./MACOSX_/img/footer/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
+            <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
+            <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
+            <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="./MACOSX_/img/footer/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
+            
         </div>
-        <p>Copyright 2022 ©</p>
-        
+            
+        <div class="contato">
+            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
+            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
+            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
+            <p class="copy">Copyright 2022 ©</p>
+        </div>
+                                
     </footer>
 </body>
 </html>
