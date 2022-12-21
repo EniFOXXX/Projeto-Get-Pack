@@ -4,103 +4,102 @@
     padding: 0; 
 }
 
-h2 {
-    font-family: Raleway;
-    text-align: center;
-    font-size: 15px;
-}
-
 .configuracao{
     margin-top: 0px auto; 
-    width: 1200px;
-    height: 540px;
+    width: 1366px;
+    height: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.div {
+.parte1 {
+    width: 850px;
+    height: 768px;
+
+}
+
+.parte2 {
+    width: 516px;
+    height: 768px;
+    background-image: url(../sobre/entregas.jpg); filter: brightness(60%);
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text1{
     width: 125px;
     height: 125px;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-
-}
-
-
-
-.div.not {
-    top: 52px;
-    left: 285px;
-    z-index: 1;
-
-}
-.text1 {
-    position: absolute;
-    top:90px;
-    left: 70px;
+    align-items: center;
     border-radius: 50%;
     background-color: green;
     border: solid white;
+    z-index: 1;
 }
 
-.div.sist {
-    top:330px;
-    left: 300px;
+.text1 > h2{
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    width: 125px;
+    height: 125px;
+
+}
+
+.text2{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+    border-radius: 50%;
+    background-color: RED;
+    border: solid white;
+    z-index: 1;
+}
+
+.text2 > h2{
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    width: 125px;
+    height: 125px;
+
+}
+
+.not {
+    width: 850px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+    width: 516px;
+    height: 80px;
+}
+
+.sist {
+    width: 850px;
+    height: 490px;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
 
-
-.div.text1 h2{
-    display: flex;
-    font-size: 13px;
-    text-align: center;
-    
-}
-
-
-.text2{
-    border-radius: 50%;
-    background-color: RED;
-    border: solid white;
-    
-    
-}
-
-.absolute {
-    position: absolute;
-    top: 480px;
-    left: 570px;
-}    
-
-.div.text2 h2{
-    display: flex;
-    font-size: 13px;
-    text-align: center;
-}
-
-
 .not, .text1, .sist, .text2{
     color: whitesmoke;
 }
-
-.parte2 {
-    display: flex;
-    flex-direction: column;
-    width: 480px;
-    height: 540px;
-    background-image: url(../sobre/entregas.jpg); filter: brightness(60%);
-    border: solid white;
-}
-
 
 .parte2 > h1 {
     color: white;
@@ -113,5 +112,3 @@ h2 {
     text-align: center;
     color: white;
 }
-
-
