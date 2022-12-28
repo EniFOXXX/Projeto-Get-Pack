@@ -1,0 +1,21 @@
+@media only screen and (max-width: 44rem) and (min-width: 22.5rem)  {
+
+    #header-contato{
+        display: flex;
+        justify-content: left;
+
+    }
+    #header-contato div {
+        
+    }
+    #header-contato nav ul {
+        display: flex;
+        height: 100%;
+        font-size: 1rem;
+        width: 12rem;
+        justify-content: space-between;
+        margin-left: 1rem;
+        font-size: 0.75rem;
+    }
+
+}
