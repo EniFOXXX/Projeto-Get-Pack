@@ -11,38 +11,98 @@
     #302b63,
     #24243e
   );
-  --backgroundSecondaryColor: rgb(88, 143, 220);
+  --secondaryColor: rgb(88, 143, 220);
   --white: #fff;
   --black: #000;
   --red: #ff3333;
   --grey: #696969;
+  --backgroundHeader: rgb(255, 255, 255);
+  --backgroundFooter: rgba(35, 91, 170, 0.818);
 }
 
-
-
-img{
+img {
   width: 20px;
   height: 20px;
 }
 
-#header-contato  {
+#header-contato {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--backgroundHeader);
 }
 
-#header-contato div img{
+#header-contato div img {
   width: 9.5rem;
   height: 2.5rem;
   padding-left: 1.25rem;
 }
-#header-contato nav ul{
+#header-contato nav ul {
   display: flex;
   list-style: inside none;
   height: 100%;
   width: 20rem;
-  justify-content: space-between;
+  /*   justify-content: space-between; */
   margin-right: 1rem;
+}
+
+#header-contato li a {
+  font-weight: 700;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  padding: 0 0 30px;
+  margin-left: 1rem;
+}
+
+#header-contato ul li a:hover {
+  background-color: rgb(88, 143, 220);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+footer {
+  background-color: var(--backgroundFooter);
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  align-items: center;
+  padding: 0 10px;
+}
+
+footer .logos {
+  display: flex;
+  justify-content: space-between;
+  list-style: inside none;
+  width: 10rem;
+}
+
+footer .contacts {
+  list-style: inside none;
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+  align-items: center;
+  height: 100%;
+}
+
+footer .contacts li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.icon-contacts :nth-child(1){
+  margin-right: 5px;
+
+}
+
+.copy{
+  font-size: 10px;
+  padding-left: 100px;
+  align-self: flex-end;
+  
 }
