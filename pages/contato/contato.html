@@ -41,22 +41,19 @@
           <img src="/assets/images/email_ss_1920-1920x1024.png" />
         </figure>
         <form action="">
-          <fieldset class="form-fieldset-name">
+          <fieldset class="form-fieldset">
             <label>Nome</label>
-            <br />
             <input type="text" placeholder="Digite seu nome Completo" />
           </fieldset>
-          <fieldset class="form-fieldset-email">
+          <fieldset class="form-fieldset">
             <label>E-mail</label>
-            <br />
             <input type="email" placeholder="Digite seu E-mail" />
           </fieldset>
-          <fieldset class="form-fieldset-email">
+          <fieldset class="form-fieldset">
             <label> Telefone </label>
-            <br />
             <input type="tel" placeholder="Digite seu n° de telefone" />
           </fieldset>
-          <fieldset class="form-fieldset-message">
+          <fieldset class="form-fieldset" id="form-textarea">
             <label>Mensagem</label>
             <textarea
               class="text-area"
@@ -103,7 +100,7 @@
           <img
             src="../../assets/images/ico_tel.png"
             alt="ícone de telefone"
-          />(22)222-2222 <a class="ligar" href="tel:+55222222222">Ligar</a>
+          /><span id="span-phone">(22)222-2222</span> <a class="ligar" href="tel:+55222222222">Ligar</a>
         </li>
         <li class="icon-contacts">
           <img
