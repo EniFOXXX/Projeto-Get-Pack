@@ -1,0 +1,15 @@
+:root {
+    --backgroundPrimaryColor: linear-gradient(
+      to right,
+      #0f0c29,
+      #302b63,
+      #24243e
+    );
+    --secondaryColor: rgb(88, 143, 220);
+    --white: #fff;
+    --black: #000;
+    --red: #ff3333;
+    --grey: #696969;
+    --backgroundHeader: rgb(255, 255, 255);
+    --backgroundFooter: rgba(35, 91, 170, 0.818);
+  }
