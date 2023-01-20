@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles/contato.css" />
-    <link rel="stylesheet" href="../../styles/media-queries-contato.css" />
+    <link rel="stylesheet" href="./contato.css" />
+    <link rel="stylesheet" href="./media-queries-contato.css"/>
+    <script src="./script.js" defer></script>
     <title>Contato</title>
   </head>
   <body>
@@ -45,14 +46,17 @@
             <label>Nome</label>
             <input type="text" placeholder="Digite seu nome Completo" />
           </fieldset>
+          <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
           <fieldset class="form-fieldset">
             <label>E-mail</label>
             <input type="email" placeholder="Digite seu E-mail" />
           </fieldset>
+          <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
           <fieldset class="form-fieldset">
             <label> Telefone </label>
             <input type="tel" placeholder="Digite seu n° de telefone" />
           </fieldset>
+          <p id="phone-helper" class="helper-text">Mensagem de ajuda</p>
           <fieldset class="form-fieldset" id="form-textarea">
             <label>Mensagem</label>
             <textarea
