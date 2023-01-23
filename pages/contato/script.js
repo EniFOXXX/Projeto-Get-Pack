@@ -1,5 +1,6 @@
 let inputs = document.querySelectorAll("input");
-let inputsHelper = document.querySelectorAll(".helper-text")
+let inputsHelper = document.querySelectorAll(".helper-text");
+let textArea =  document.querySelector("textarea");
 
 const inputValues = {
     name: "input-name",
@@ -10,11 +11,11 @@ const inputValues = {
 const inputsHelperMessages = {
     name: "Seu username precisa ter 3 ou mais caracteres",
     email: "Precisa inserir um email válido e que contenha '@' e '.com'",
-    phone: "Seu número de telefone precisa ter 9 ou mais números"
+    phone: "Valor incorreto, precisa ser somente números e ter 9 ou mais digitos"
 
 }
 
-const events = ["blur", "change"]
+const events = "change"
 
 function estilizarInputCorreto(input, helper) {
     helper.classList.remove("visible");
@@ -29,7 +30,7 @@ function estilizarInputIncorreto(input, helper) {
 }
 
 for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener(events[i], (e) => {
+    inputs[i].addEventListener(events, (e) => {
 
         let inputValue = e.target.value
 
@@ -54,9 +55,13 @@ for (let i = 0; i < inputs.length; i++) {
 
         }
 
-        if (inputs[i].id === inputValues.phone) {
+        if (inputs[i].id === inputValues.phone ) {
+
+            var regexPhone = /[^0-9.]/;
+
+            console.log( regexPhone.test(inputValue))
     
-            if (inputValue.length < 9) {
+            if (inputValue.length < 9 || regexPhone.test(inputValue)) {
                 inputsHelper[i].innerText = inputsHelperMessages.phone
                 estilizarInputIncorreto(inputs[i], inputsHelper[i])
             } else {

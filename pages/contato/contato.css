@@ -194,6 +194,13 @@ footer .contacts li {
   
 }
 
+button{
+  border-radius: 12px;
+  padding: 5px;
+  border: none;
+  background-color: var(--white)
+}
+
 input.error{
   background-color: var(--lightGrey);
   border: solid 2px var(--purple);
