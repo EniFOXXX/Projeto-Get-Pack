@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css" />
-    <script href="./script.js" defer></script>
+    <link rel="stylesheet" href="modal.css" />
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header id="header-contato">
@@ -22,14 +24,22 @@
     </header>
     <section class="section-form">
       <div class="form">
-        <header>Login</header>
+        <h3>Login</h3>
         <form action="#">
-          <input
-            type="text"
-            placeholder=" Digite seu endereço de email"
-            required
-          />
-          <input type="password" placeholder="Digite sua senha" required />
+          <fieldset class="form-fieldset">
+            <label>E-mail</label>
+            <input
+              type="text"
+              placeholder=" Digite seu endereço de email"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <label>Password</label>
+            <input type="password" placeholder="Digite sua senha" required />
+          </fieldset>
+
           <div class="checkbox">
             <input type="checkbox" id="logincheck" />
             <label for="logincheck">
@@ -43,7 +53,17 @@
         </form>
       </div>
       <div class="form login">
-        <header>Login</header>
+        <h3>Login</h3>
+      </div>
+      <!-- Trigger/Open The Modal -->
+      <button id="my-btn">Open Modal</button>
+
+      <!-- Modal content -->
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Dados não enviados</p>
+        </div>
       </div>
     </section>
   </body>
