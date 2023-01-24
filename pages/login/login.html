@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css" />
-    <script href="./script.js" defer></script>
+    <link rel="stylesheet" href="modal.css" />
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header id="header-contato">
@@ -44,6 +46,16 @@
       </div>
       <div class="form login">
         <h3>Login</h3>
+      </div>
+      <!-- Trigger/Open The Modal -->
+      <button id="my-btn">Open Modal</button>
+
+      <!-- Modal content -->
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Dados não enviados</p>
+        </div>
       </div>
     </section>
   </body>
