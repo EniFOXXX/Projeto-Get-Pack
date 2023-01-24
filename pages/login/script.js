@@ -1,4 +1,4 @@
-// Get the modal
+// Abrir e Fechar modal
 var modal = document.getElementById("my-modal");
 
 var btn = document.getElementById("my-btn");
@@ -18,3 +18,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Validar Inputs
+
+let inputs = document.querySelectorAll("inputs");
+
