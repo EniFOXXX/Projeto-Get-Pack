@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
 
     <script src="./script.js" defer></script>
   </head>
@@ -27,17 +27,25 @@
         <h3>Login</h3>
         <form action="#">
           <fieldset class="form-fieldset">
-            <label>E-mail</label>
             <input
               type="text"
               placeholder=" Digite seu endereço de email"
+              autocomplete="on"
               required
             />
+            <label>E-mail</label>
+            <span id="email-span"></span>
           </fieldset>
 
           <fieldset class="form-fieldset">
+            <input
+              type="password"
+              placeholder="Digite sua senha"
+              autocomplete="on"
+              required
+            />
             <label>Password</label>
-            <input type="password" placeholder="Digite sua senha" required />
+            <span id="password-span"></span>
           </fieldset>
 
           <div class="checkbox">

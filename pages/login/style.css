@@ -33,6 +33,7 @@ body {
       0.1
     );
   overflow: hidden;
+  color: #fff;
 }
 .form.login {
   position: absolute;
@@ -88,18 +89,7 @@ form
   border-radius: 8px;
   background: #fff;
 }
-.form
-  input {
-  border: 1px
-    solid
-    #aaa;
-}
-.form
-  input:focus {
-  box-shadow: 0
-    1px 0
-    #ddd;
-}
+
 form
   .checkbox {
   display: flex;
@@ -134,4 +124,77 @@ form
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+}
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.form-fieldset{
+  position: relative;
+  padding-top: 13px;
+}
+
+.form-fieldset input{
+  order: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.form-fieldset input:focus{
+  border: 2px solid #3951b2;
+}
+
+.form-fieldset input::placeholder{
+  color:transparent;
+}
+
+.form-fieldset label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+.form-fieldset input:required:invalid + label{
+  color: #302b63;
+}
+.form-fieldset input:focus:required:invalid{
+  border: 2px solid red;
+}
+.form-fieldset input:required:invalid + label:before{
+  content: '*';
+}
+.form-fieldset input:focus + label,
+.form-fieldset input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
+
+
+
+.error{
+  background-color: red;
+  border: solid 2px var(--purple);
+  color: #fff;
+}
+
+.correct{
+  background-color:green;
+  border: solid 2px var(--green);
 }
