@@ -1,3 +1,51 @@
+// prevent form submit
+const form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
+
+//  toogle password
+const togglePassword = document.querySelector('#toggle-password');
+const password = document.querySelector('#password');
+
+
+togglePassword.addEventListener("click", function () {
+  // toggle the type attribute
+  const type = password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+
+  // toggle the icon
+  this.classList.toggle("bi-eye");
+});
+
+
+// functions of input validations
+
+function estilizarInputCorreto(input, span) {
+
+  if (span.id === spanValues.email) {
+    span.innerText = ""
+    openModal(input.value)
+  }
+  if (span.id === spanValues.password) {
+    span.innerText = ""
+  }
+
+  input.classList.remove("error");
+  input.classList.add("correct");
+}
+
+function estilizarInputIncorreto(input, span) {
+  if (span.id === spanValues.email) {
+    span.innerText = "O campo e-mail não pode ser vazio"
+  }
+  if (span.id === spanValues.password) {
+    span.innerText = "O campo password não pode ser vazio"
+  }
+  input.classList.add("error");
+  input.classList.remove("correct");
+}
+
 // Abrir e Fechar modal
 var modal = document.getElementById("my-modal");
 
@@ -13,15 +61,19 @@ span.onclick = function () {
   modal.style.display = "none";
 }
 
-window.onclick = function (event) {
-  if (event.target == modal) {
+function openModal(input) {
+  if (!input.includes("@") && !input.includes(".com")) {
+    modal.style.display = "block";
+  } else {
     modal.style.display = "none";
   }
+
 }
 
 // Validar Inputs
 
-let inputs = document.querySelectorAll("input");
+let inputs = document.querySelectorAll(".input-value");
+let inputCheckbox = document.querySelector("#logincheck");
 
 const spanValues = {
   email: "email-span",
@@ -32,23 +84,19 @@ for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
   input.addEventListener("blur", (e) => {
 
-    let spans = document.querySelectorAll("span")
+    let spans = document.querySelectorAll("span");
 
     let value = e.target.value;
 
     if (!value) {
-      input.classList.toggle("error");
-      if (spans[i].id === "email-span") {
-        spans[i].innerText = "O campo e-mail não pode ser vazio"
-      } else {
-        spans[i].innerText = "O campo password não pode ser vazio"
 
-      }
+      estilizarInputIncorreto(input, spans[i])
     } else {
-      input.classList.toggle("correct");
-      spans[i].innerText = ""
+
+      estilizarInputCorreto(input, spans[i])
     }
+
+
   })
 }
-
 
