@@ -8,6 +8,7 @@
     --secondaryColor: rgb(88, 143, 220);
     --white: #fff;
     --black: #000;
+    --transparentBlack: rgba(0,0,0,0.4); 
     --red: #ff3333;
     --grey: #696969;
     --lightGrey: #BBCCBB;
@@ -15,4 +16,5 @@
     --backgroundFooter: rgba(35, 91, 170, 0.818);
     --purple:#992020;
     --green:#206620;
+    --darked: rgb(139,0,0);
   }

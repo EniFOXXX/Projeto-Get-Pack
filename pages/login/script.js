@@ -21,21 +21,23 @@ togglePassword.addEventListener("click", function () {
 
 // functions of input validations
 
-function estilizarInputCorreto(input, span) {
+function styleInputCorrect(input, span) {
 
   if (span.id === spanValues.email) {
     span.innerText = ""
-    openModal(input.value)
+    openModal(input)
   }
   if (span.id === spanValues.password) {
     span.innerText = ""
+    openModal(input)
   }
 
   input.classList.remove("error");
   input.classList.add("correct");
+  togglePassword.style.color = "#fff"
 }
 
-function estilizarInputIncorreto(input, span) {
+function styleInputIncorrect(input, span) {
   if (span.id === spanValues.email) {
     span.innerText = "O campo e-mail não pode ser vazio"
   }
@@ -44,30 +46,40 @@ function estilizarInputIncorreto(input, span) {
   }
   input.classList.add("error");
   input.classList.remove("correct");
+  togglePassword.style.color = "#fff"
 }
 
 // Abrir e Fechar modal
-var modal = document.getElementById("my-modal");
+let modal = document.getElementById("my-modal");
 
-var btn = document.getElementById("my-btn");
+let btn = document.getElementById("my-btn");
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-}
+let textModal = document.querySelector("p");
 
 span.onclick = function () {
   modal.style.display = "none";
 }
 
 function openModal(input) {
-  if (!input.includes("@") && !input.includes(".com")) {
-    modal.style.display = "block";
-  } else {
-    modal.style.display = "none";
+  if (input.id === "email") {
+    if (!input.value.includes("@") && !input.value.includes(".com")) {
+      modal.style.display = "block";
+      textModal.innerText = "Email deve conter '@' e também '.com' entre seus caracteres"
+    } else {
+      modal.style.display = "none";
+    }
   }
+  if (input.id === "password") {
+    if(input.value.length < 8){
+      modal.style.display = "block";
+      textModal.innerText = "Password deve conter mais que 8 caracteres"
+    }else{
+      modal.style.display = "none";
 
+    }
+  }
 }
 
 // Validar Inputs
@@ -90,12 +102,11 @@ for (let i = 0; i < inputs.length; i++) {
 
     if (!value) {
 
-      estilizarInputIncorreto(input, spans[i])
+      styleInputIncorrect(input, spans[i])
     } else {
 
-      estilizarInputCorreto(input, spans[i])
+      styleInputCorrect(input, spans[i])
     }
-
 
   })
 }
