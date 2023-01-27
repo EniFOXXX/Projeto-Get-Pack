@@ -35,7 +35,7 @@
 }
 
 #header-contato ul li a:hover {
-  background-color: rgb(88, 143, 220);
+  background-color: var(--secondaryColor);
   border-radius: 10px;
   color: white;
   transition: 0.3s;
@@ -93,7 +93,7 @@ form {
   border: solid 4px;
   border-radius: 40px;
   background-color: var(--secondaryColor);
-  color: #000;
+  color: var(--black);
   padding: 10px;
   width: 80%;
   height: fit-content;
@@ -188,7 +188,7 @@ footer .contacts li {
 .helper-text{
   display: none;
   font-size: .8rem;
-  color: darkred;
+  color: var(--darkred);
   
 }
 
