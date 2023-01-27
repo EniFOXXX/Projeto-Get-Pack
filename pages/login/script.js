@@ -33,6 +33,7 @@ function estilizarInputCorreto(input, span) {
 
   input.classList.remove("error");
   input.classList.add("correct");
+  togglePassword.style.color = "#fff"
 }
 
 function estilizarInputIncorreto(input, span) {
@@ -44,6 +45,7 @@ function estilizarInputIncorreto(input, span) {
   }
   input.classList.add("error");
   input.classList.remove("correct");
+  togglePassword.style.color = "#fff"
 }
 
 // Abrir e Fechar modal
