@@ -58,11 +58,6 @@ let span = document.getElementsByClassName("close")[0];
 
 let textModal = document.querySelector("p");
 
-
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-
 span.onclick = function () {
   modal.style.display = "none";
 }
@@ -112,13 +107,6 @@ for (let i = 0; i < inputs.length; i++) {
 
       styleInputCorrect(input, spans[i])
     }
-
-    if (value) {
-      if (value.length < 8) {
-
-      }
-    }
-
 
   })
 }
