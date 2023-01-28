@@ -200,18 +200,19 @@ button{
 }
 
 input.error{
-  background-color: var(--lightGrey);
+  background-color:var(--red);
   border: solid 2px var(--purple);
-  color: var(--purple);
+  color: var(--white);
 }
 
 input.correct{
   background-color: var(--lightGrey);
   border: solid 2px var(--green);
-  color: var(--green);
+  color: var(--backgroundPrimaryColor);
 
 }
 
 .visible {
   display: block;
+  color: var(--white);
 }
