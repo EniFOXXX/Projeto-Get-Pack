@@ -27,6 +27,7 @@ function estilizarInputIncorreto(input, helper) {
     helper.classList.add("visible");
     input.classList.add("error");
     input.classList.remove("correct");
+
 }
 
 for (let i = 0; i < inputs.length; i++) {
