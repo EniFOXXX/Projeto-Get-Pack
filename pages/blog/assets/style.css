@@ -8,6 +8,10 @@
     
 }
 
+.carrossel{
+    position: relative;
+}
+
 
 
 header{
@@ -73,38 +77,82 @@ li{
     background-image: url(../MACOSX_/img/main/carrossel.jpg);
 }
 
-.slide1{    
+.container_top{    
     height: 350px;  
     width: 970px;  
     padding-top: 70px;
     padding-left: 70px;
     margin: auto;
     opacity: 50%;
-    background-image: linear-gradient(#44A4B5, #173D75);
-    
+    background-image: linear-gradient(#44A4B5, #173D75);    
+}
+
+.container_top{
+    display: none;
+}
+.container_top.active{
+    display: block;
 }
 
 
-
-.banner_tittle1{      
+.banner_tittle{      
     width: 430px;
     padding-bottom: 15px;    
     background-color:aqua;
 }
-.banner_text1{      
+.banner_text{      
     color: #fff;
     position: absolute;
 }
 
-.banner_bot{  
-    float: right;
-    border: 0;
-    margin-top: -45px;
-    margin-right: 20px;
-     
-    width: 70px;
-    height: 30px;     
-    
+.container_top .slide .banner_bot{  
+    margin-top: 120px;
+    display: inline-block;
+    background: #000;
+    color: #ffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border:2px solid #44A4B5;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;    
+}
+.container_top .banner_bot:hover{
+    background: #ffff;
+    border: 2px solid #44A4B5;
+    color: #000;
+}
+
+
+/*BOTÕES--------------------------*/
+
+.carrossel #prev, 
+.carrossel #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffff;
+    background: #44A4B5;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.carrossel #prev:hover, 
+.carrossel #next:hover{
+    background: #6bc3d4;
+}
+
+.carrossel #prev{
+    left: 20px;
+}
+.carrossel #next{
+    right: 20px;
 }
 
 /*BAND----------------------------*/
