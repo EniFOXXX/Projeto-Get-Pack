@@ -12,7 +12,7 @@
     position: relative;
 }
 
-
+/*HEADER-----------------------------*/
 
 header{
     display: flex;
@@ -24,31 +24,33 @@ header{
 }
 
 
-ul{
+header ul{
     display: flex;
-    align-items: center;
+    list-style: inside none;
     height: 100%;
-    margin-right: 80px;
+    margin-right: 1rem;
 }
 
-
-.menu  li a{
-    font-weight: 700;
-    color: rgb(88, 143, 220);
-    text-decoration: none;    
-}
-
-li{
+header li{
     list-style-type: none;
-    padding: 30px;    
+    padding: 15px;    
 }
+
+header ul li a{
+    font-weight: bold;
+    color: var(--secondaryColor);
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 1rem;    
+}
+
+
 
 .menu ul li a:hover{
-    background-color: rgb(88, 143, 220); ;
+    background-color: rgb(88, 143, 220);
     border-radius: 10px;
-    color:white;
-    padding: px;
-    transition: 0.2s;    
+    color: white;
+    transition: 0.3s;    
 }
 
 .logo{
@@ -315,4 +317,186 @@ footer{
     padding-right: 10px;
     width:40px;
     height:40px;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 900px){
+
+    body{
+        width: 900px;
+    }
+
+    main{
+        width:960px;
+    }
+
+
+    /*HEADER-----------------------------*/
+
+    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 960px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+
+    header ul{
+        display: flex;
+        list-style: inside none;
+        height: 100%;
+        margin-right: 5rem;
+    }
+
+    header li{
+        list-style-type: none;
+        padding: 5px;    
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    header ul li a{
+        font-weight: bold;
+        color: var(--secondaryColor);
+        text-decoration: none;
+        padding: 5px;
+        margin-left: 0.5rem;    
+    }
+
+
+
+    .menu ul li a:hover{
+        background-color: rgb(88, 143, 220);
+        border-radius: 10px;
+        color: white;
+        transition: 0.3s;    
+    }
+
+    #logo{
+        width: 120px;
+        height: 33px;
+        margin-right: 7px;        
+    }
+
+
+
+    /*GERAL-----------------------------*/
+
+    .carrossel{
+        width: 960px;
+        height: 350px;    
+        margin: auto;
+        background-image: url(../MACOSX_/img/main/carrossel.jpg);
+    }
+    
+    .container_top{    
+        height: 350px;  
+        width: 750px;  
+        padding-top: 70px;
+        padding-left: 70px;
+        margin: auto;
+        opacity: 50%;
+        background-image: linear-gradient(#44A4B5, #173D75);    
+    }
+    
+    
+    .container_band{      
+        width: 850px;
+        height: 550px;
+        margin: auto;
+        background-image: url(../MACOSX_/img/main/fundo.jpg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+          
+    }
+    
+    .container_geral1{  
+        width: 820px;    
+        display: flex;
+        flex-direction: column;   
+        align-items: center; 
+        justify-content: center;   
+            
+    }
+    
+    
+    .container_local1, .container_local2{   
+        width: 800px;
+        height: 250px;     
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);   
+    }
+
+    
+    .carrossel #prev{
+        left: 50px;
+    }
+    .carrossel #next{
+        right: 50px;
+    }
+
+    /*CORPO-------------------------------------------*/
+
+    .container_int1, 
+    .container_int2, 
+    .container_int3, 
+    .container_int4{  
+        margin: 1rem;
+        width: 330px;
+        height: 185px;  
+        background-color:crimson;  
+    }
+
+    /*LATERAL-------------------------------------------*/
+
+    .container_geral2{      
+        background-color: #000;
+        opacity: 65%;  
+        margin-right: 30px;
+        display: none;
+    }
+    .container_lad{
+        color: #fff;
+    }
+    
+    .container_lad strong, p{      
+        color: #fff;    
+        font-size: 15px;
+    }
+    .propag a{
+        text-align:  center;
+        margin: auto;
+        right: 50px;
+        text-decoration: none;
+        background-color: #6bc3d4;
+    }
+
+
+
+    /*RODAPÉ-------------------------------------------*/
+    
+    
+    footer{
+        background-color: rgba(35, 91, 170, 0.818);
+        height: 142px;
+        width: 960px;
+    }    
+
+}
+
+
+
+
+@media only screen and (min-width: 820px) and (max-width: 768px){
+
+    
+
 }
