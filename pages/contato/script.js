@@ -30,7 +30,9 @@ function estilizarInputIncorreto(input, helper) {
 
 }
 
-for (let i = 0; i < inputs.length; i++) {
+const inputLength = inputs.length;
+
+for (let i = 0; i < inputLength; i++) {
     inputs[i].addEventListener(events, (e) => {
 
         let inputValue = e.target.value
@@ -59,8 +61,6 @@ for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].id === inputValues.phone ) {
 
             var regexPhone = /[^0-9.]/;
-
-            console.log( regexPhone.test(inputValue))
     
             if (inputValue.length < 9 || regexPhone.test(inputValue)) {
                 inputsHelper[i].innerText = inputsHelperMessages.phone
