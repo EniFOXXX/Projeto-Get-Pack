@@ -25,12 +25,15 @@ header{
     font-weight: 700;
     color: rgb(88, 143, 220);
     text-decoration: none;
+    padding: 10px;
+    
     
 }
+
 .nav a{
     height: 25px;
     width: 90px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
@@ -42,18 +45,27 @@ li{
     padding: 30px;
     
 }
-menu ul li a:hover{
-    background-color: rgb(88, 143, 220); ;
+menu ul li div a:hover{
+    background-color: rgb(88, 143, 220);
     border-radius: 10px;
-    color:white;
-    padding: 10px;
+    color:rgb(251, 251, 251);
+    padding: 5px;
     transition: 0.2s;
     opacity: 5;
     
-    
- 
+}
+ .menu .acesso {
+    background-color: rgb(88, 143, 220);
+    border-radius: 10px;
+    color:rgb(251, 251, 251);
+    padding: 10px;
+    transition: 0.2;
+    opacity: 5;
     
 }
+
+
+
 .logo{
     padding-left: 20px;
 }
