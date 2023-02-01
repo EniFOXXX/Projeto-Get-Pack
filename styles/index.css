@@ -45,15 +45,7 @@ li{
     padding: 30px;
     
 }
-menu ul li div a:hover{
-    background-color: rgb(88, 143, 220);
-    border-radius: 10px;
-    color:rgb(251, 251, 251);
-    padding: 5px;
-    transition: 0.2s;
-    opacity: 5;
-    
-}
+
  .menu .acesso {
     background-color: rgb(88, 143, 220);
     border-radius: 10px;
