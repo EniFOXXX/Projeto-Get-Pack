@@ -31,10 +31,6 @@ function styleInputCorrect(input, span) {
     span.innerText = ""
     openModal(input)
   }
-
-  input.classList.remove("error");
-  input.classList.add("correct");
-  togglePassword.style.color = "#fff"
 }
 
 function styleInputIncorrect(input, span) {
@@ -64,19 +60,27 @@ span.onclick = function () {
 
 function openModal(input) {
   if (input.id === "email") {
-    if (!input.value.includes("@") && !input.value.includes(".com")) {
+    if (!input.value.includes("@")|| !input.value.includes(".com")) {
       modal.style.display = "block";
       textModal.innerText = "Email deve conter '@' e também '.com' entre seus caracteres"
+      input.classList.add("error");
     } else {
       modal.style.display = "none";
+      input.classList.remove("error");
+      input.classList.add("correct");
+
     }
   }
   if (input.id === "password") {
     if(input.value.length < 8){
       modal.style.display = "block";
-      textModal.innerText = "Password deve conter mais que 8 caracteres"
+      textModal.innerText = "Password deve conter mais que 8 caracteres";
+      input.classList.add("error");
+      togglePassword.style.color = "#fff";
     }else{
       modal.style.display = "none";
+      input.classList.remove("error");
+      input.classList.add("correct");
 
     }
   }
