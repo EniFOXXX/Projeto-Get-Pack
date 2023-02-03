@@ -33,7 +33,8 @@
 section{
   display:flex;
   align-items: flex-start;
-  background-image: url("../assets/images/fundo.jpg");
+  background-image: url("../../assets/images/fundo.jpg");
+  
   
   }
 
