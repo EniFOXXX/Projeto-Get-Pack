@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../styles/index.css">
     <link rel="stylesheet" type="text/css" href="../../styles/clientes.css">
+    <link rel="stylesheet" type="text/css" href="../contato/media-queries-contato.css"/> -->
+    <!-- <script src="./script.js" defer></script> -->
+    <script src="./clientes.js" defer></script>
     <title>Clientes | GetPack</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
@@ -22,30 +24,39 @@
 </head>
 <body>
     <!--logo e menu-->
-        <header>
-            <a class="logo" href="../../index.html"><img src="../../assets/images/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
-           <nav class="menu">
-            <ul>
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="../../pages/sobre/sobre.html">Sobre</a></li>
-                <li><a href="../../pages/clientes/clientes.html">Clientes</a></li>
-                <li><a href="../../pages/blog/blog.html">Blog</a></li>
-                <li><a href="../../pages/contato/contato.html">Contato</a></li>
-            </ul>
-           </nav>
-        </header>
+    <header id="header-contato">
+        <div>
+          <a href="../../index.html"
+            ><img
+              id="image-logo"
+              src="../../assets/images/GETPACK1-LOGO 1.png"
+              alt="logo GetPack"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="menu-li"><a href="../../index.html">Início</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../clientes/clientes.html">Clientes</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+            <li><a href="../login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+  
     <!--conteúdo principal-->
     <main>
         <section>
             <div class="div-clientes">
                 <div class="div-titulo"><h2>Nossos Clientes</h2></div>
                 <div class="div-logotipos">
-                    <img src="../../assets/images/logos-condominios/logo-adm-condominios.png" alt="logotipo Adm Condomnios">
-                    <img src="../../assets/images/logos-condominios/logo-cond-lafitte.jpg" alt="logotipo Condomnio Lafitte">
-                    <img src="../../assets/images/logos-condominios/logo-cond-vale-verde.png" alt="logotipo Condomnios Vale Verde">
-                    <img src="../../assets/images/logos-condominios/logo-cond-vila-sol.png" alt="logotipo Condomnio vila do sol">
-                    <img src="../../assets/images/logos-condominios/logo-ethos-condominios.png" alt="logotipo Ethos Condomnios">
-                    <img src="../../assets/images/logos-condominios/logo-exacto-condominios.png" alt="logotipo Exacto Condomnios">
+                    <img src="../../assets/images/logos-condominios/logo-adm-condominios.png" alt="logotipo Adm Condomnios" id="logo1">
+                    <img src="../../assets/images/logos-condominios/logo-cond-lafitte.jpg" alt="logotipo Condomnio Lafitte" id="logo2">
+                    <img src="../../assets/images/logos-condominios/logo-cond-vale-verde.png" alt="logotipo Condomnios Vale Verde" id="logo3">
+                    <img src="../../assets/images/logos-condominios/logo-cond-vila-sol.png" alt="logotipo Condomnio vila do sol" id="logo4">
+                    <img src="../../assets/images/logos-condominios/logo-ethos-condominios.png" alt="logotipo Ethos Condomnios"id="logo5">
+                    <img src="../../assets/images/logos-condominios/logo-exacto-condominios.png" alt="logotipo Exacto Condomnios"id="logo6">
 
                 </div>
                 <div class="div-comentarios">
@@ -95,23 +106,60 @@
         </section>       
     </main>
     <!--Rodapé da página-->
+        
         <footer>
-            <div class="redes">
-            <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="../../assets/images/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="../../assets/images/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="../../assets/images/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="../../assets/images/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
-            
-            </div>
-            
-            <div class="contato">
-                <p><img class="icon-contato" src="../../assets/images/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
-                <p><img class="icon-contato" src="../../assets/images/e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-                <p><img class="icon-contato" src="../../assets/images/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
-                <p class="copy">Copyright 2022 ©</p>
-            </div>
-                                
-        </footer>
+            <ul class="logos">
+              <li class="logos-list">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="../../assets/images/logo_face.png" alt="logo facebook"
+                /></a>
+              </li>
+              <li class="logos-list">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img src="../../assets/images/logo_insta.png" alt="logo instagram"
+                /></a>
+              </li>
+              <li class="logos-list">
+                <a href="https://www.twitter.com/" target="_blank"
+                  ><img src="../../assets/images/logo_twitter.png" alt="logo twitter"
+                /></a>
+              </li>
+              <li class="logos-list">
+                <a
+                  href="https://wa.me/55229999999?text=Olá,%20GetPack!"
+                  target="_blank"
+                  ><img
+                    src="../../assets/images/logo_whatsapp.png"
+                    alt="logo facebook"
+                /></a>
+              </li>
+            </ul>
+      
+            <ul class="contacts">
+              <li class="icon-contacts">
+                <img
+                  src="../../assets/images/ico_tel.png"
+                  alt="ícone de telefone"
+                /><span id="span-phone">(22)222-2222</span> <a class="ligar" href="tel:+55222222222">Ligar</a>
+              </li>
+              <li class="icon-contacts">
+                <img
+                  src="../../assets/images/e-mail.png"
+                  alt="ícone de e-mail "
+                /><a class="email" href="mailto:contato@gmail.com"
+                  >contato@gmail.com</a
+                >
+              </li>
+              <li class="icon-contacts">
+                <img
+                  src="../../assets/images/ico_localização.png"
+                  alt="ícone de localização"
+                />
+                <span>Rua das Palmeiras, 123 - Centro </span>
+              </li>
+            </ul>
+            <span class="copy">Copyright 2022 ©</span>
+          </footer>
    
 </body>
 </html>
