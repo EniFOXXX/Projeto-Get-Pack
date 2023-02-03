@@ -6,7 +6,7 @@ let logo1 = document.getElementById("logo1");
 logo1.addEventListener("mouseover", function(e){
     console.log('mouseover ok');
     // e.target.border = "1px"
-    e.target.border = "1px"
+    e.target.border = "1px rounded"
 });
 logo1.addEventListener("mouseleave", function(e){
     console.log('mouseleave ok');
