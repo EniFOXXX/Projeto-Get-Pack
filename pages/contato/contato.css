@@ -1,5 +1,6 @@
 @import url(../../styles/colors.css);
 * {
+  font-family: Raleway;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -146,8 +147,8 @@ footer {
 }
 
 footer img{
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 footer .logos {
@@ -177,8 +178,11 @@ footer .contacts li {
 .contacts a, span{
   margin-left: 0.5rem;
   text-decoration: none;
-  
+  color: var(--black);
+  font-weight: bold;
+
 }
+
 .copy{
   font-size: 1rem;
   padding: 5px;

@@ -1,6 +1,7 @@
 let inputs = document.querySelectorAll("input");
 let inputsHelper = document.querySelectorAll(".helper-text");
-let textArea =  document.querySelector("textarea");
+let textArea = document.querySelector("textarea");
+let button = document.querySelector("button[type='submit']");
 
 const inputValues = {
     name: "input-name",
@@ -46,35 +47,34 @@ for (let i = 0; i < inputLength; i++) {
         }
 
         if (inputs[i].id === inputValues.email) {
-    
+
             if (inputValue.includes("@") && inputValue.includes(".com") && !inputValue.includes("@.com")) {
                 estilizarInputCorreto(inputs[i], inputsHelper[i]);
 
             } else {
                 inputsHelper[i].innerText = inputsHelperMessages.email
                 estilizarInputIncorreto(inputs[i], inputsHelper[i])
-
             }
-
         }
 
-        if (inputs[i].id === inputValues.phone ) {
+        if (inputs[i].id === inputValues.phone) {
 
             var regexPhone = /[^0-9.]/;
-    
+
             if (inputValue.length < 9 || regexPhone.test(inputValue)) {
                 inputsHelper[i].innerText = inputsHelperMessages.phone
                 estilizarInputIncorreto(inputs[i], inputsHelper[i])
             } else {
                 estilizarInputCorreto(inputs[i], inputsHelper[i]);
-              
-
             }
-
         }
-
-
     })
-
 }
+
+// função para enviar o formulário após todas as validações
+button.addEventListener("click", (e)=>{
+    e.preventDefault()
+})
+
+
 
