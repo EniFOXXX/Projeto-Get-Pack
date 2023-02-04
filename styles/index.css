@@ -34,7 +34,7 @@ header{
 .nav a{
     height: 25px;
     width: 90px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
@@ -45,6 +45,10 @@ li{
     list-style-type: none;
     padding: 5px;
     
+    
+}
+nav{
+    margin-right: 30px;
 }
 
  .menu .acesso {
