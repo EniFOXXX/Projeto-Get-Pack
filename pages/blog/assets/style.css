@@ -1,5 +1,7 @@
 /*COR DE FUNDO E8E8F4, 343BCE*/
 
+@import url(../../styles/colors.css);
+
 *{
     font-family: Raleway;
     margin: 0;
@@ -73,8 +75,7 @@ header ul li a{
     background-image: linear-gradient(        
         #343BCE,
         #E8E8F4
-    );
-    
+    );    
 }
 
 /*CARROSSEL---------------------------*/
@@ -326,69 +327,64 @@ footer{
     width:40px;
     height:40px;
 }
+
 */
 
 
-/*------------------*/
-
-:root {
-    --backgroundPrimaryColor: linear-gradient(
-      to right,
-      #0f0c29,
-      #302b63,
-      #24243e
-    );
-    --secondaryColor: rgb(88, 143, 220);
-    --white: #fff;
-    --black: #000;
-    --transparentBlack: rgba(0,0,0,0.4); 
-    --red: #ff3333;
-    --grey: #696969;
-    --lightGrey: #BBCCBB;
-    --backgroundHeader: rgb(255, 255, 255);
-    --backgroundFooter: rgba(35, 91, 170, 0.818);
-    --purple:#992020;
-    --green:#206620;
-    --darked: rgb(139,0,0);
-  }
-
-footer {
-    background-color: var(--secondaryColor);
-    display: flex;
-    flex-direction: row;
-    height:15vh;
-    align-items: center;
+.rodape{
+    background-color: rgba(35, 91, 170, 0.818);
+    display: flex;  
+    height:15vh;    
     padding: 0 10px;
-  }
-  
-  footer img{
+}
+
+.copy_top{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;                
+}
+
+footer img{
     width: 18px;
     height: 18px;
-  }
+}
   
-  footer .logos {
+footer .logos {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     list-style: inside none;
     width: 10rem;
-  }
+}
   
-  footer .contacts {
+footer .contacts {    
     list-style: inside none;
     display: flex;
     justify-content: space-around;
     width: 50rem;
     align-items: center;
     height: 100%;
-  }
+    margin-right: auto;
+    margin-left: auto;
+}
   
-  footer .contacts li {
+footer .contacts li{
     height: 100%;
     display: flex;
-    align-items: center;
-    
-    
-  }
+    align-items: center;   
+}
+footer .contacts a{
+    text-decoration: none; 
+    color: rgb(00, 08, 43);
+    font-weight: bold;  
+}
+footer .contacts a, span{
+    text-decoration: none;
+    font-weight: bold;      
+}
+
+/*------------------*/
 
 
 
@@ -560,10 +556,50 @@ footer {
     /*RODAPÉ-------------------------------------------*/
     
     
-    footer{
+    footer {
         background-color: rgba(35, 91, 170, 0.818);
-        height: 142px;                
-    }    
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;
+        width: 10rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }    
 
 }
 
@@ -578,14 +614,9 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;    
-    }
+    }    
 
-    
-
-
-    /*HEADER-----------------------------*/
-
-    
+    /*HEADER-----------------------------*/    
 
     header{
         display: flex;
@@ -651,9 +682,7 @@ footer {
         background-image: linear-gradient(#44A4B5, #173D75);    
     }
     
-    .corpo{
-        margin: auto;
-    }
+    
     
     .container_band{      
         width: 752px;
@@ -735,16 +764,57 @@ footer {
     /*RODAPÉ-------------------------------------------*/
     
     
-    footer{
+    footer {
         background-color: rgba(35, 91, 170, 0.818);
-        height: 142px;                
-    }    
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;         
+        margin-left: 1.5rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }   
 
 }
 
 
 
-@media only screen and (max-width: 767px) and (min-width: 640px){
+@media only screen and (max-width: 767px) and (min-width: 718px){
 
     *{
         font-family: Raleway;
@@ -765,8 +835,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         height: 70px;        
-        background-color: rgb(255, 255, 255);
-        margin: auto;
+        background-color: rgb(255, 255, 255);        
     }
 
 
@@ -808,7 +877,7 @@ footer {
     /*GERAL-----------------------------*/
 
     .carrossel{
-        width: 750px;
+        width: 650px;
         height: 350px;    
         margin: auto;
         background-image: url(../MACOSX_/img/main/carrossel.jpg);
@@ -824,12 +893,10 @@ footer {
         background-image: linear-gradient(#44A4B5, #173D75);    
     }
     
-    .corpo{
-        margin: auto;
-    }
+    
     
     .container_band{      
-        width: 700px;
+        width: 650px;
         height: 550px;
         margin: auto;
         background-image: url(../MACOSX_/img/main/fundo.jpg);
@@ -838,14 +905,18 @@ footer {
         justify-content: space-between; 
           
     }
+
+    .img_band_int{
+        width: 280px;
+        height: 185px;
+    }
     
     .container_geral1{  
         width: 700px;    
         display: flex;
         flex-direction: column;   
         align-items: center; 
-        justify-content: center;   
-            
+        justify-content: center;             
     }
     
     
@@ -908,10 +979,52 @@ footer {
     /*RODAPÉ-------------------------------------------*/
     
     
-    footer{
+    footer {
         background-color: rgba(35, 91, 170, 0.818);
-        height: 142px;                
-    }    
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;
+        width: 10rem;
+        margin-left: 1.5rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }    
 
 }
 
