@@ -680,7 +680,7 @@ footer{
 /*TERCEIRO POINT ------------------------------RESPONSIVO*/
 
 
-@media only screen and (max-width: 768px) and (min-width: 640px){
+@media only screen and (max-width: 767px) and (min-width: 640px){
 
     *{
         font-family: Raleway;
@@ -744,7 +744,7 @@ footer{
     /*GERAL-----------------------------*/
 
     .carrossel{
-        width: 900px;
+        width: 752px;
         height: 350px;    
         margin: auto;
         background-image: url(../MACOSX_/img/main/carrossel.jpg);
@@ -752,10 +752,10 @@ footer{
     
     .container_top{    
         height: 350px;  
-        width: 750px;  
+          
         padding-top: 70px;
         padding-left: 70px;
-        margin: auto;
+        
         opacity: 50%;
         background-image: linear-gradient(#44A4B5, #173D75);    
     }
@@ -765,7 +765,7 @@ footer{
     }
     
     .container_band{      
-        width: 900px;
+        width: 752px;
         height: 550px;
         margin: auto;
         background-image: url(../MACOSX_/img/main/fundo.jpg);
@@ -776,7 +776,7 @@ footer{
     }
     
     .container_geral1{  
-        width: 900px;    
+        width: 752px;    
         display: flex;
         flex-direction: column;   
         align-items: center; 
@@ -786,7 +786,7 @@ footer{
     
     
     .container_local1, .container_local2{   
-        width: 800px;
+        width: 680px;
         height: 250px;     
         display: flex;
         flex-direction: row; 
