@@ -27,23 +27,23 @@ header{
     color: rgb(88, 143, 220);
     text-decoration: none;
     padding: 10px;
-    
+    margin-left: 1rem;
     
 }
 
 .nav a{
     height: 25px;
     width: 90px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
-    
+    margin-left: 1rem;
     
 }
 li{
     list-style-type: none;
-    padding: 30px;
+    padding: 5px;
     
 }
 
