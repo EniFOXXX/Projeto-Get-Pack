@@ -1,3 +1,4 @@
+@import url(../../styles/colors.css);
 *{
     font-family: Raleway;
     margin: 0;
@@ -134,9 +135,11 @@ h2{
    justify-content: space-between;
    padding: 10px;
    border-radius: 20px;
-   margin-bottom: 137px;
+   margin-bottom: 118px;
     
 }
+
+
 .title-blog{
     color:white;
     padding: 25px;
@@ -156,52 +159,50 @@ ul{
     margin-right: 80px;
 }
 
-
-footer{
-    background-color: rgba(3, 24, 55, 0.818);
-    height: 20vh;
-    }
-.redes{
+footer {
+    background-color: var(--secondaryColor);
     display: flex;
-    justify-content: end;
-    padding-right: 10px;
-    padding-top: 15px; 
-    padding-left: 10px;
-    height: 50px; 
-    width: 100%;  
-}
-.redes-1{
-    padding-right: 50px;
-    
-
-}
-.ligar,.email{
-    
-    color:white;
-    padding: 10px;
-    text-decoration: none;
-    padding: auto;;
-}
-.contato,p{
-    display: contents;
-    padding-left: 100px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-   
-
-}
-#copy{
+    flex-direction: row;
+    height:15vh;
+    align-items: center;
+    padding: 0 10px;
+  }
+  footer .logos {
     display: flex;
-    justify-content: end;
-    font-size: 10px;
-    padding-right: 150px;
-
-  
+    justify-content: space-between;
+    list-style: inside none;
+    width: 10rem;
+  }
+  footer .contacts {
+    list-style: inside none;
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    align-items: center;
+    height: 100%;
+  }
+  footer .contacts li {
+    height: 100%;
+    display: flex;
+    align-items: center;
     
-}
-.icon-contato{
-    padding-right: 10px;
-    padding-left: 30px;
-    width:20px;
-    height:20px;
-}
+    
+  }
+  .copy{
+    font-size: 1rem;
+    padding: 5px;
+    margin: auto
+  }
+
+
+footer img{
+        width: 18px;
+        height: 18px;
+      }
+.contacts a, span{
+        margin-left: 0.5rem;
+        text-decoration: none;
+        color: var(--black);
+        font-weight: bold;
+      
+      }
