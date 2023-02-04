@@ -152,20 +152,10 @@ footer .contacts li {
     /* max-width:150px;
     max-height:100px; */
     /* max-width:150px; */
-    max-height:50%;
+    max-height:100%;
     width: auto;
-    height: auto;
+    height: 50%;
     /* image-rendering: auto; */
-}
-
-.div-logotipos-grandes {
-  /* max-width:150px;
-  max-height:100px; */
-  /* max-width:150px; */
-  max-height:80%;
-  width: auto;
-  height: auto;
-  /* image-rendering: auto; */
 }
 
 h2{
@@ -187,7 +177,7 @@ h2{
 }
 
 .div-comentario-unitario {
-    width: 30%;
+    width: 25%;
     height: 90%;
     padding: 1%;
     border-radius: 5vh;
@@ -195,11 +185,11 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-direction: column;
     align-items: center;
 }
 
 .div-comentario-unitario p,strong {
+  
     color: rgb(28, 33, 128);
     text-align: center;
     /* font-size: small; */
@@ -207,9 +197,22 @@ h2{
 
 .div-comentario-unitario img {
     width: 30%;
-    margin: auto;
+    /* margin: auto; */
 }
 
+footer img{
+  width: 18px;
+  height: 18px;
+}
+
+
+.contacts a, span{
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+
+}
 
 
 /* Autor: Alexandre Alves Batista */
