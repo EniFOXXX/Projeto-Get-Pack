@@ -15,6 +15,32 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+#header-login{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  list-style: none inside;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a{
+  color:var(--backgroundFooter);
+  text-decoration: none;
+  font-family: Raleway;
+  width: 20;
+  border-radius:  10px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  background-color:var(--backgroundFooter);
+  color: var(--white)
+
+}
+
 .section-form {
   position: relative;
   max-width: 470px;
