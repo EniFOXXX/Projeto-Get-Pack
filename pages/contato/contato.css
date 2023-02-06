@@ -99,6 +99,7 @@ form {
   width: 80%;
   height: fit-content;
   margin: auto;
+  font-weight: bold;
 
 }
 
@@ -128,6 +129,7 @@ form label {
 #form-textarea{
   flex-direction: column;
   align-items: start;
+  caret-color: var(--red);
 }
 
 .form-fieldset textarea {
@@ -200,7 +202,9 @@ button{
   border-radius: 12px;
   padding: 5px;
   border: none;
-  background-color: var(--white)
+  background-color: var(--white);
+  font-weight: bold;
+  
 }
 
 input.error{
