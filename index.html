@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/contato.css" />
+    <script src="./pages/inicio/script.js" defer></script> 
     <title>Início | GetPack</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
@@ -24,11 +24,12 @@
             <a class="logo" href="index.html"><img src="./assets/images/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
            <nav class="menu">
             <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="pages/sobre/sobre.html">Sobre</a></li>
-                <li><a href="/pages/clientes/clientes.html">Clientes</a></li>
-                <li><a href="pages/blog/blog.html">Blog</a></li>
-                <li><a href="pages/contato/contato.html">Contato</a></li>
+                <li ><a class="nav" href="./index.html">Início</a></li>
+                <li ><a class="nav"  href="pages/sobre/sobre.html">Sobre</a></li>
+                <li ><a class="nav" href="/pages/clientes/clientes.html">Clientes</a></li>
+                <li ><a class="nav" href="pages/blog/blog.html">Blog</a></li>
+                <li ><a class="nav"  href="pages/contato/contato.html">Contato</a></li>
+                <li ><a class="nav" href="./pages/login/login.html">Login</a></li>
             </ul>
            </nav>
         </header>
@@ -42,16 +43,22 @@
                 <div><h2>Agilize o fluxo de encomendas na portaria do seu prédio...</h2></div> 
                 
                 <div class="item-1">
-                    <p>"Não tenha mais dor de cabeça 
+                    <p>"Não tenha mais dor de cabeça</p> 
+                    <br>
                     <p>com encomenda estraviada.</p>
+                    <br>
                     <p>Tenha o controle nas suas mãos,</p>
+                    <br>
                     <p>com mais praticidade e organização."</p>
+                    
                 </div>            
                   
                 
                 <div  class="item-2">
                     <p>"O sistema é totalmente on-line,</p>
+                    <br>
                     <p>conta com aplicativo para celular.</p>
+                    <br>
                     <p>O acessa rápido e fácil."</p>                
                 </div>   
                 
@@ -79,25 +86,63 @@
        
     </main>
     <!--Rodapé da página-->
-        <footer>
-            <div class="redes">
-            <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="assets/images/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="assets/images/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="assets/images/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="assets/images/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
-            
-            </div>
-            
-            <div class="contato">
-                <p><img class="icon-contato" src="assets/images/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
-                <p><img class="icon-contato" src="assets/images/e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-                <p><img class="icon-contato" src="assets/images/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
-                <p class="copy">Copyright 2022 ©</p>
-            </div>
-                                
-        </footer>
+    <footer>
+        <ul class="logos">
+          <li class="logos-list">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img    src="../../assets/images/icons/facebook.png" alt="logo facebook"
+            /></a>
+          </li>
+          <li class="logos-list">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="../../assets/images/icons/instagram.png" alt="logo instagram"
+            /></a>
+          </li>
+          <li class="logos-list">
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="../../assets/images/icons/twitter.png" alt="logo twitter"
+            /></a>
+          </li>
+          <li class="logos-list">
+            <a
+              href="https://wa.me/55229999999?text=Olá,%20GetPack!"
+              target="_blank"
+              ><img
+                src="../../assets/images/icons/whatsapp.png"
+                alt="logo facebook"
+            /></a>
+          </li>
+        </ul>
+  
+        <ul class="contacts">
+          <li class="icon-contacts">
+            <img
+              src="../../assets/images/icons/phone-call.png"
+              alt="ícone de telefone"
+            /><span id="span-phone">(22)222-2222</span> <a class="ligar" href="tel:+55222222222">Ligar</a>
+          </li>
+          <li class="icon-contacts">
+            <img
+              src="../../assets/images/icons/mail.png"
+              alt="ícone de e-mail "
+            /><a class="email" href="mailto:contato@gmail.com"
+              >contato@gmail.com</a
+            >
+          </li>
+          <li class="icon-contacts">
+            <img
+              src="../../assets/images/icons/google-maps.png"
+              alt="ícone de localização"
+            />
+            <span>Rua das Palmeiras, 123 - Centro </span>
+          </li>
+        </ul>
+        <span class="copy">Copyright 2022 ©</span>
+      </footer>
 
       
-    </footer>
+    
+    <script type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script > 
+   <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" ></script >
   </body>
 </html>

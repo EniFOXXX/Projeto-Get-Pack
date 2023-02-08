@@ -10,85 +10,121 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles/contato.css" />
-    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="./contato.css" />
+    <link rel="stylesheet" href="./media-queries-contato.css"/>
+    <script src="./script.js" defer></script>
     <title>Contato</title>
   </head>
   <body>
-    <header>
-      <div class="container-header">
-        <div class="container-logo">
-          <a href="../../index.html"
+    <header id="header-contato">
+      <div>
+        <a href="../../index.html"
           ><img
             id="image-logo"
             src="../../assets/images/GETPACK1-LOGO 1.png"
             alt="logo GetPack"
         /></a>
-        </div>
-        <nav class="menu">
-          <ul>
-            <li class="menu-li"><a href="../../index.html">Início</a></li>
-            <li><a href="../sobre/sobre.html">Sobre</a></li>
-            <li><a href="../clientes/clientes.html">Clientes</a></li>
-            <li><a href="../blog/blog.html">Blog</a></li>
-            <li><a href="../contato/contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>  
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-li"><a href="../../index.html">Início</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../clientes/clientes.html">Clientes</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="../contato/contato.html">Contato</a></li>
+          <li><a href="../login/login.html">Login</a></li>
+        </ul>
+      </nav>
     </header>
-    <main class="main-container">
+    <main>
       <h1>FALE CONOSCO</h1>
-      <div class="main-container-content">
-        <div class="container-image">
+      <section>
+        <figure class="container-image">
           <img src="/assets/images/email_ss_1920-1920x1024.png" />
-        </div>
-        <div class="form-container">
-          <form action="">
-            <fieldset class="form-fieldset-name">
-              <label>Nome</label>
-              <br />
-              <input type="text" placeholder="Digite seu nome Completo" />
-            </fieldset>
-            <fieldset class="form-fieldset-email">
-              <label>E-mail</label>
-              <br />
-              <input type="email" placeholder="Digite seu E-mail" />
-            </fieldset>
-            <fieldset class="form-fieldset-email">
-              <label> Telefone </label>
-              <br />
-              <input type="tel" placeholder="Digite seu n° de telefone" />
-            </fieldset>
-            <fieldset class="form-fieldset-message">
-              <label>Mensagem</label>
-              <textarea
-                class="text-area"
-                name="msg"
-                id="msg"
-                cols="30"
-                rows="8"
-                placeholder="Digite aqui sua mensagem, responderemos assim que possível"
-              ></textarea>
-            </fieldset>
-          </form>
-        </div>
-      </div>
+        </figure>
+        <form action="">
+          <fieldset class="form-fieldset">
+            <label>Nome</label>
+            <input type="text" id="input-name" placeholder="Digite seu nome Completo" />
+          </fieldset>
+          <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
+          <fieldset class="form-fieldset">
+            <label>E-mail</label>
+            <input type="email" id="input-email" placeholder="Digite seu E-mail" />
+          </fieldset>
+          <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+          <fieldset class="form-fieldset">
+            <label>Telefone</label>
+            <input type="text" id="input-phone" placeholder="Digite seu Telefone" />
+          </fieldset>
+          <p id="phone-helper" class="helper-text">Mensagem de ajuda</p>
+          <fieldset class="form-fieldset" id="form-textarea">
+            <label>Mensagem</label>
+            <textarea
+              class="text-area"
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="8"
+              placeholder="Digite aqui sua mensagem, responderemos assim que possível"
+            ></textarea>
+          </fieldset>
+          <button type="submit">ENVIAR</button>
+        </form>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="redes">
-      <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="../../assets/images/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
-      <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="../../assets/images/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
-      <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="../../assets/images/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
-      <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="../../assets/images/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>   
-      </div>
-      <div class="contato">
-          <p><img class="icon-contato" src="../../assets/images/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
-          <p><img class="icon-contato" src="../../assets/images/e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-          <p><img class="icon-contato" src="../../assets/images/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
-          <p class="copy">Copyright 2022 ©</p>
-      </div>
-                          
-  </footer>
+    <footer>
+      <ul class="logos">
+        <li class="logos-list">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img    src="../../assets/images/icons/facebook.png" alt="logo facebook"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="../../assets/images/icons/instagram.png" alt="logo instagram"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a href="https://www.twitter.com/" target="_blank"
+            ><img src="../../assets/images/icons/twitter.png" alt="logo twitter"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a
+            href="https://wa.me/55229999999?text=Olá,%20GetPack!"
+            target="_blank"
+            ><img
+              src="../../assets/images/icons/whatsapp.png"
+              alt="logo facebook"
+          /></a>
+        </li>
+      </ul>
+
+      <ul class="contacts">
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/phone-call.png"
+            alt="ícone de telefone"
+          /><span id="span-phone">(22)222-2222</span> <a class="ligar" href="tel:+55222222222">Ligar</a>
+        </li>
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/mail.png"
+            alt="ícone de e-mail "
+          /><a class="email" href="mailto:contato@gmail.com"
+            >contato@gmail.com</a
+          >
+        </li>
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/google-maps.png"
+            alt="ícone de localização"
+          />
+          <span>Rua das Palmeiras, 123 - Centro </span>
+        </li>
+      </ul>
+      <span class="copy">Copyright 2022 ©</span>
+    </footer>
   </body>
 </html>
-
