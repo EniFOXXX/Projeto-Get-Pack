@@ -117,6 +117,19 @@ form label {
   padding-left: 5px;
   color: #0f0c29;
 }
+form button{
+  display: flex;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+form button:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #009900;
+  color: var(--white);
+}
+
 .form-fieldset{
   display: flex;
   align-items: center;
