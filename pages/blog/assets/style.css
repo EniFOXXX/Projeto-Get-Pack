@@ -84,7 +84,7 @@ header ul li a{
     width: 1170px;
     height: 350px;    
     margin: auto;
-    background-image: url(../MACOSX_/img/main/carrossel.jpg);
+    background-image: url(../assets/img/main/carrossel.jpg);
 }
 
 .container_top{    
@@ -178,7 +178,7 @@ header ul li a{
     height: 550px;
     width: 1170px;
     margin: auto;
-    background-image: url(../MACOSX_/img/main/fundo.jpg);
+    background-image: url(../assets/img/main/fundo.jpg);
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -356,6 +356,7 @@ footer .logos {
     justify-content: space-between;
     list-style: inside none;
     width: 10rem;
+    margin-left: 1.5rem;
 }
   
 footer .contacts {    
@@ -459,7 +460,7 @@ footer .contacts a, span{
         width: 884px;
         height: 350px;    
         margin: auto;
-        background-image: url(../MACOSX_/img/main/carrossel.jpg);
+        background-image: url(../assets/img/main/carrossel.jpg);
     }
     
     .container_top{    
@@ -480,7 +481,7 @@ footer .contacts a, span{
         width: 884px;
         height: 550px;
         margin: auto;
-        background-image: url(../MACOSX_/img/main/fundo.jpg);
+        background-image: url(../assets/img/main/fundo.jpg);
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
@@ -575,6 +576,7 @@ footer .contacts a, span{
         justify-content: space-between;
         list-style: inside none;
         width: 10rem;
+        margin-left: 1.5rem;
       }
       
       footer .contacts {
@@ -669,7 +671,7 @@ footer .contacts a, span{
         width: 752px;
         height: 350px;    
         margin: auto;
-        background-image: url(../MACOSX_/img/main/carrossel.jpg);
+        background-image: url(../assets/img/main/carrossel.jpg);
     }
     
     .container_top{    
@@ -688,7 +690,7 @@ footer .contacts a, span{
         width: 752px;
         height: 550px;
         margin: auto;
-        background-image: url(../MACOSX_/img/main/fundo.jpg);
+        background-image: url(../assets/img/main/fundo.jpg);
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
@@ -880,7 +882,7 @@ footer .contacts a, span{
         width: 650px;
         height: 350px;    
         margin: auto;
-        background-image: url(../MACOSX_/img/main/carrossel.jpg);
+        background-image: url(../assets/img/main/carrossel.jpg);
     }
     
     .container_top{    
@@ -899,7 +901,7 @@ footer .contacts a, span{
         width: 650px;
         height: 550px;
         margin: auto;
-        background-image: url(../MACOSX_/img/main/fundo.jpg);
+        background-image: url(../assets/img/main/fundo.jpg);
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
