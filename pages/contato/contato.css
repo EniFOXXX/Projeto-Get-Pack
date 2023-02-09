@@ -99,7 +99,6 @@ form {
   width: 80%;
   height: fit-content;
   margin: auto;
-  font-weight: bold;
 
 }
 
@@ -111,11 +110,13 @@ form input {
   width: 80%;
   border-top: none;
   border-bottom: none;
+  
 
 }
 form label {
   padding-left: 5px;
   color: #0f0c29;
+  font-weight: bold;
 }
 form button{
   display: flex;

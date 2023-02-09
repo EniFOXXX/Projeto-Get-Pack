@@ -12,7 +12,7 @@ const inputValues = {
 const inputsHelperMessages = {
     name: "Seu username precisa ter 3 ou mais caracteres",
     email: "Precisa inserir um email válido e que contenha '@' e '.com'",
-    phone: "Valor incorreto, precisa ser somente números e ter 9 ou mais digitos"
+    phone: "Valor incorreto, precisa ser somente números e ter 11 ou mais digitos"
 
 }
 
@@ -61,7 +61,7 @@ for (let i = 0; i < inputLength; i++) {
 
             var regexPhone = /[^0-9.]/;
 
-            if (inputValue.length < 9 || regexPhone.test(inputValue)) {
+            if (inputValue.length < 11 || regexPhone.test(inputValue)) {
                 inputsHelper[i].innerText = inputsHelperMessages.phone
                 estilizarInputIncorreto(inputs[i], inputsHelper[i])
             } else {
