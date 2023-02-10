@@ -1,9 +1,3 @@
-// prevent form submit
-const form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-});
-
 //  toogle password
 const togglePassword = document.querySelector('#toggle-password');
 const password = document.querySelector('#password');
@@ -114,4 +108,24 @@ for (let i = 0; i < inputs.length; i++) {
 
   })
 }
+
+function getCheckedValue() {
+  var checkbox = document.querySelector("#logincheck");
+  if (checkbox.checked) {
+    console.log(checkbox.checked)
+    return checkbox.value;
+  }
+  return null;
+}
+
+
+// prevent form submit
+const form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var checkedValue = getCheckedValue();
+{checkedValue? window.alert("Dados enviados com Sucesso !!") : window.alert("Você deve aceitar os termos para efetuar Login !!")}
+});
+
+
 
