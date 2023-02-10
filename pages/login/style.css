@@ -1,12 +1,11 @@
 /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url(../../styles/colors.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins",
-    sans-serif;
+  font-family: "Raleway";
+  font-weight: bold;
 }
 body {
   min-height: 100vh;
@@ -28,7 +27,6 @@ body {
 nav a{
   color:var(--backgroundFooter);
   text-decoration: none;
-  font-family: Raleway;
   width: 20;
   border-radius:  10px;
   padding: 5px;
@@ -130,7 +128,7 @@ form
   margin-top: 15px;
   padding: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
 }
 fieldset{
