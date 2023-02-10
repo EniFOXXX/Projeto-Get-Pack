@@ -89,7 +89,7 @@ button.addEventListener("click", (e)=>{
         window.alert("Seu Telefone precisa ser preenchido")
     }
     else if(textMessage === ""){
-        window.alert("Sua Mensagem precisa ser preenchido")
+        window.alert("O corpo da Mensagem precisa ser preenchido")
     } else{
         window.alert("Sua mensagem foi enviada com Sucesso")
     }
