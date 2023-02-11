@@ -59,7 +59,6 @@ main h1{
   font-size: 30px;
   text-shadow: 0.1rem 0.1rem var(--grey);
   font-family: Raleway;
-  padding: 30px;
 }
 
 main section{
@@ -70,7 +69,6 @@ main section{
   justify-items: center;
   width: 60%;
   margin-bottom: 1rem;
-  height: 80%;
 
 }
 

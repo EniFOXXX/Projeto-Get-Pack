@@ -54,7 +54,7 @@ span.onclick = function () {
 
 function openModal(input) {
   if (input.id === "email") {
-    if (!input.value.includes("@")|| !input.value.includes(".com")) {
+    if (!input.value.includes("@") || !input.value.includes(".com")) {
       modal.style.display = "block";
       textModal.innerText = "Email deve conter '@' e também '.com' entre seus caracteres"
       input.classList.add("error");
@@ -66,12 +66,12 @@ function openModal(input) {
     }
   }
   if (input.id === "password") {
-    if(input.value.length < 8){
+    if (input.value.length < 8) {
       modal.style.display = "block";
       textModal.innerText = "Password deve conter mais que 8 caracteres";
       input.classList.add("error");
       togglePassword.style.color = "#fff";
-    }else{
+    } else {
       modal.style.display = "none";
       input.classList.remove("error");
       input.classList.add("correct");
@@ -119,13 +119,18 @@ function getCheckedValue() {
 }
 
 
-// prevent form submit
-const form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
+// função para validar Login 
+
+function handleLogin(e) {
   e.preventDefault();
+  //como não existe back-end fiz e como já foi criado todas as validações, aqui coloquei apenas uma validação para enviar os dados
   var checkedValue = getCheckedValue();
-{checkedValue? window.alert("Dados enviados com Sucesso !!") : window.alert("Você deve aceitar os termos para efetuar Login !!")}
-});
+
+  { checkedValue ? window.alert("Dados enviados com Sucesso !!") : window.alert("Você deve aceitar os termos para efetuar Login !!") }
+}
+
+const form = document.querySelector("form");
+form.addEventListener("submit", handleLogin);
 
 
 
