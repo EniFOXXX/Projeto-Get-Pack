@@ -103,9 +103,11 @@ button.addEventListener("click", (e) => {
     if(!inputName || !inputEmail || !inputPhone || !textMessage ){
         window.alert("Para enviar sua Mensagem todos os campos devem ser preenchidos")
     }else{
-        // aqui iria a função de conexão com o banco de dados
         window.alert("Formulário enviado com sucesso.");
+        document.querySelector("form").reset();
+    // aqui iria a função de conexão com o banco de dados
         sendForm()
+
     }
 
 })
