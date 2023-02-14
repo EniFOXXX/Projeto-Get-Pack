@@ -21,6 +21,73 @@
     --darked: rgb(139,0,0);
   }
 
+
+@import url(../../styles/colors.css);
+* {
+  font-family: Raleway;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--backgroundHeader);
+}
+
+#header-contato div img {
+  width: 9.5rem;
+  height: 2.5rem;
+  padding-left: 1.25rem;
+}
+
+#header-contato nav ul {
+  display: flex;
+  list-style: inside none;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+#header-contato ul li a {
+  font-weight: 700;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 1rem;
+}
+
+#header-contato ul li a:hover {
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .estrutura {
     display: flex;
     flex-direction: column;
