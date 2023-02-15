@@ -1,47 +1,58 @@
 CREATE TABLE Mensagens (
   id_mensagem SERIAL PRIMARY KEY NOT NULL,
-  remetente VARCHAR(255) NOT NULL,
+  remetente VARCHAR(50) NOT NULL,
   data_envio TIMESTAMP NOT NULL,
-  assunto VARCHAR(255) NOT NULL
+  texto_mensagem VARCHAR(1000) NOT NULL
 --texto_mensagem VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Cliente (
   id_cliente SERIAL PRIMARY KEY NOT NULL,
-  nome_cliente VARCHAR(255) NOT NULL,
-  sobrenome_cliente VARCHAR(255) NOT NULL,
+  nome_cliente VARCHAR(20) NOT NULL,
+  sobrenome_cliente VARCHAR(50) NOT NULL,
   data_cadastro TIMESTAMP NOT NULL,
-  tipo_cliente VARCHAR(255) NOT NULL,
-  cpf_cnpj VARCHAR(255) NOT NULL
+  tipo_cliente VARCHAR(2) NOT NULL,
+  cpf_cnpj VARCHAR(19) NOT NULL
 );
 
 CREATE TABLE Morador (
   id_morador SERIAL PRIMARY KEY NOT NULL,
-  nome_morador VARCHAR(255) NOT NULL,
-  sobrenome_morador VARCHAR(255) NOT NULL,
-  bloco VARCHAR(255) NOT NULL,
-  ap VARCHAR(255) NOT NULL,
+  nome_morador VARCHAR(20) NOT NULL,
+  sobrenome_morador VARCHAR(50) NOT NULL,
+  numero INT(6) DEFAULT NULL,
+  bloco VARCHAR(5) DEFAULT NULL
+  ap VARCHAR(5) DEFAULT NULL,
   id_cliente INT NOT NULL REFERENCES Cliente (id_cliente) ON DELETE SET NULL
 );
 
 CREATE TABLE Encomenda (
   id_encomenda SERIAL PRIMARY KEY NOT NULL,
-  remetente VARCHAR(255) NOT NULL,
-  id_destinatario INT REFERENCES Morador (id_morador)
-);
+  remetente VARCHAR(50) NOT NULL,
+  id_destinatario INT 
+  id_usuario INT NOT NULL REFERENCES Usuario (id_user)
+  
+);5
 
 CREATE TABLE User_permissao (
   id_permissao INT PRIMARY KEY,
-  tipo_permissao VARCHAR(255)
+  tipo_permissao VARCHAR(5)
 );
 
 CREATE TABLE Usuario (
   id_user SERIAL PRIMARY KEY NOT NULL,
-  nome_usuario VARCHAR(255) NOT NULL,
-  sobrenome_usuario VARCHAR(255) NOT NULL,
-  endereco VARCHAR(255),
+  nome_usuario VARCHAR(20) NOT NULL,
+  sobrenome_usuario VARCHAR(50) NOT NULL,
   id_cliente INT NOT NULL REFERENCES Cliente (id_cliente),
   id_user_permissao INT NOT NULL REFERENCES User_permissao (id_permissao)
+  );
+  # aqui criamos uma tabela baseada na 1 forma normal, separando o endereco do Usuario do Sistema da tabela dele
+CREATE TABLE Endereco_Usuario (
+  id SERIAL PRIMARY KEY NOT NULL,
+  logradouro VARCHAR(100) NOT NULL,
+  numero INT (6) NOT NULL,
+  complemento VARCHAR (25) DEFAULT NULL,
+  CEP VARCHAR (10) NOT NULL,
+  id_usuario INT NOT NULL REFERENCES Usuario (id_user)
 );
 
 
