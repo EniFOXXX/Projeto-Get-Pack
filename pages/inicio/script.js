@@ -6,7 +6,7 @@
     
     nav.addEventListener("mouseover",()=>{
       nav.classList.toggle("acesso"); 
-      console.log(nav)
+      
     })
    })
    
@@ -15,7 +15,7 @@
     
     nav.addEventListener("mouseout",()=>{
       nav.classList.toggle("acesso"); 
-      console.log(nav)
+      
     })
 
    })
