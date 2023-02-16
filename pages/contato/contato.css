@@ -59,6 +59,7 @@ main h1{
   font-size: 30px;
   text-shadow: 0.1rem 0.1rem var(--grey);
   font-family: Raleway;
+  margin-bottom: 2rem;
 }
 
 main section{
