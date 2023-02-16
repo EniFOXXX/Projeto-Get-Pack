@@ -49,7 +49,7 @@ logo6.addEventListener("mouseover", function(e){
 logo6.addEventListener("mouseleave", function(e){
     logo6.style.height = "50%";
 });
-
+/* 
 let comentario1 = document.getElementById("comentario1");
 
 comentario1.addEventListener("mouseover", function(e){
@@ -75,4 +75,4 @@ comentario3.addEventListener("mouseover", function(e){
 });
 comentario3.addEventListener("mouseleave", function(e){
     comentario3.style.border = "0px";
-});
+}); */
