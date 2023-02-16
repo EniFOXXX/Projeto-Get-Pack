@@ -332,7 +332,7 @@ footer{
 
 
 .rodape{
-    background-color: rgba(35, 91, 170, 0.818);
+    background-color: rgba(88, 143, 220);
     display: flex;  
     height:15vh;    
     padding: 0 10px;
@@ -558,7 +558,7 @@ footer .contacts a, span{
     
     
     footer {
-        background-color: rgba(35, 91, 170, 0.818);
+        background-color: rgba(88, 143, 220);
         display: flex;
         flex-direction: row;
         height:15vh;
@@ -767,7 +767,7 @@ footer .contacts a, span{
     
     
     footer {
-        background-color: rgba(35, 91, 170, 0.818);
+        background-color: rgba(88, 143, 220);
         display: flex;
         flex-direction: row;
         height:15vh;
@@ -982,7 +982,7 @@ footer .contacts a, span{
     
     
     footer {
-        background-color: rgba(35, 91, 170, 0.818);
+        background-color: rgba(88, 143, 220);
         display: flex;
         flex-direction: row;
         height:15vh;
