@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="../contato/media-queries-contato.css"/>
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="">
 
 
     <style>
@@ -43,17 +45,18 @@
     <!--CABEÇALHO-------------------------->
     <!--logo e menu-->
     <header>
-        <a class="logo" href="index.html"><img src="MACOSX_/img/header/GETPACK1-LOGO 1.png" alt="logo GetPack" style="width:151px;height: 42px;"></a>
+        <a class="logo" href="../../index.html"><img id="logo" src="../../assets/images/GETPACK1-LOGO 1.png" alt="logo GetPack""></a>
        
         <input class="buscar" placeholder="buscar..." type="text">
 
         <nav class="menu">
         <ul>
-            <li><a href="./index.html">Início</a></li>
-            <li><a href="pages/sobre/sobre.html">Sobre</a></li>
-            <li><a href="/pages/clientes/clientes.html">Clientes</a></li>
-            <li><a href="pages/blog/blog.html">Blog</a></li>
-            <li><a href="pages/contato/contato.html">Contato</a></li>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../../pages/clientes/clientes.html">Clientes</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+            <li><a href="../login/login.html">Login</a></li>
         </ul>
        </nav>
     </header>
@@ -67,42 +70,57 @@
         <!--CARROSSEL------------------->
 
         <section class="carrossel">
-            <div class="slide1">
-                <h2 class="banner_tittle1">Controle de acesso em Condomímio</h2>
-                <h3 class="banner_text1">
-                Lorem ipsum dolor sit amet conse<br>
-                ctetur adipisicing elit. Veniam<br>
-                nulla atque, est alias ad aspernatur<br>
-                iusto natus ipsa cumque nemo <br>
-                explicabo consequatur veritatis
-                </h3>
-            </div>
 
-            <div class="slide2" style="display: none;">
-                <h2 class="banner_tittle2">Controle de acesso em Condomímio</h2>
-                <h3 class="banner_text2">
-                Lorem ipsum dolor sit amet conse<br>
-                ctetur adipisicing elit. Veniam<br>
-                nulla atque, est alias ad aspernatur<br>
-                iusto natus ipsa cumque nemo <br>
-                explicabo consequatur veritatis
-                </h3>
-            </div>
-
-            <div class="slide3" style="display: none;">
-                <h2 class="banner_tittle3">Controle de acesso em Condomímio</h2>
-                <h3 class="banner_text3">
-                Lorem ipsum dolor sit amet conse<br>
-                ctetur adipisicing elit. Veniam<br>
-                nulla atque, est alias ad aspernatur<br>
-                iusto natus ipsa cumque nemo <br>
-                explicabo consequatur veritatis
-                </h3>
+            <div class="container_top active">
+                <div class="slide">
+                    <h2 class="banner_tittle">Controle de acesso em Condomímio</h2>
+                    <h3 class="banner_text">
+                    Lorem ipsum dolor sit amet conse<br>
+                    ctetur adipisicing elit. Veniam<br>
+                    nulla atque, est alias ad aspernatur<br>
+                    iusto natus ipsa cumque nemo <br>
+                    explicabo consequatur veritatis
+                    </h3>
+                    <a href="#"><button class="banner_bot">Saiba mais...</button></a>
+                </div>
             </div>
             
-            <a href="#"><button class="banner_bot">Mais+</button></a>
+
+            <div class="container_top">
+                <div class="slide">
+                    <h2 class="banner_tittle">Os cuidados com a segurança dos moradores</h2>
+                    <h3 class="banner_text">
+                    Lorem ipsum dolor sit amet conse<br>
+                    ctetur adipisicing elit. Veniam<br>
+                    nulla atque, est alias ad aspernatur<br>
+                    iusto natus ipsa cumque nemo <br>
+                    explicabo consequatur veritatis
+                    </h3>
+                    <a href="#"><button class="banner_bot">Saiba mais...</button></a>
+                </div>
+            </div>
+            
+            <div class="container_top">
+                <div class="slide">
+                    <h2 class="banner_tittle">Os benefícios da caminhada</h2>
+                    <h3 class="banner_text">
+                    Lorem ipsum dolor sit amet conse<br>
+                    ctetur adipisicing elit. Veniam<br>
+                    nulla atque, est alias ad aspernatur<br>
+                    iusto natus ipsa cumque nemo <br>
+                    explicabo consequatur veritatis
+                    </h3>
+                    <a href="#"><button class="banner_bot">Saiba mais...</button></a>
+                </div>
+            </div>
+
+           
+            <div id="next"> > </div>
+            <div id="prev"> < </div>
+            
         </section>
 
+        
 
         <!--BAND------------------->
 
@@ -123,7 +141,7 @@
                             recusandae aspernatur 
                             </p>
                         </div>                        
-                        <img class="img_band_int" src="MACOSX_/img/main/service.jpg" alt="">
+                        <img class="img_band_int" src="../../assets/images/img_blog/main/service.jpg" alt="">
                     </div>
     
                     <div class="container_int2">    
@@ -136,7 +154,7 @@
                             recusandae aspernatur
                             </p>
                         </div>                        
-                        <img class="img_band_int" src="MACOSX_/img/main/ecommerce.jpg" alt="">
+                        <img class="img_band_int" src="../../assets/images/img_blog/main/ecommerce.jpg" alt="">
                     </div>
 
                 </section>
@@ -154,7 +172,7 @@
                             recusandae aspernatur
                             </p>
                         </div>                        
-                        <img class="img_band_int" src="MACOSX_/img/main/demanda.jpg" alt="">                        
+                        <img class="img_band_int" src="../../assets/images/img_blog/main/demanda.jpg" alt="">                        
                     </div>
     
                     <div class="container_int4">    
@@ -167,7 +185,7 @@
                             recusandae aspernatur
                             </p>                        
                         </div>                    
-                        <img class="img_band_int" src="MACOSX_/img/main/dropshipping.jpg" alt="">                    
+                        <img class="img_band_int" src="../../assets/images/img_blog/main/dropshipping.jpg" alt="">                    
                     </div>
 
                 </section>
@@ -182,13 +200,13 @@
 
                 <div class="container_lad">
                     <h3 class="container_tittle">Escolha seu plano</h3>
-                    <div>
+                    <div class="propag">
                         <strong >R$29,90/Mês</strong>s
                         <p>
                             Lorem ipsum dolor sit amet<br>
                             adipisicing elit.                        
                         </p> 
-                        <button>Conferir</button>
+                        <a href="#">Conferir</a>
                     </div>
                     
                 </div>
@@ -200,24 +218,91 @@
 
     <!--RODAPÉ---------------------------->
 
+    <footer class="rodape">
+      <ul class="logos">
+        <li class="logos-list">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img    src="../../assets/images/icons/facebook.png" alt="logo facebook"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="../../assets/images/icons/instagram.png" alt="logo instagram"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a href="https://www.twitter.com/" target="_blank"
+            ><img src="../../assets/images/icons/twitter.png" alt="logo twitter"
+          /></a>
+        </li>
+        <li class="logos-list">
+          <a
+            href="https://wa.me/55229999999?text=Olá,%20GetPack!"
+            target="_blank"
+            ><img
+              src="../../assets/images/icons/whatsapp.png"
+              alt="logo facebook"
+          /></a>
+        </li>
+      </ul>
+
+      <ul class="contacts">
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/phone-call.png"
+            alt="ícone de telefone"
+          />
+          <span id="span-phone">(22)222-2222</span> 
+          <a class="ligar" href="tel:+55222222222">Ligar</a>
+        </li>
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/mail.png"
+            alt="ícone de e-mail "
+          />
+          <a 
+            class="email" 
+            href="mailto:contato@gmail.com"
+            >contato@gmail.com</a>
+        </li>
+        <li class="icon-contacts">
+          <img
+            src="../../assets/images/icons/google-maps.png"
+            alt="ícone de localização"
+          />
+          <span>Rua das Palmeiras, 123 - Centro</span>
+        </li>
+      </ul>
+
+      <div class="copy_top">
+        <span class="copy">Copyright 2022 ©</span>
+      </div>
+
+      
+    </footer>
+
 
         <!--REDESOCIAL-->
+    
+    <!--
     <footer>
-        <div class="redes">
-            <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="./MACOSX_/img/footer/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
-            <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="./MACOSX_/img/footer/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
+      <div class="redes">
+        <div class="redes-1"><a href="https://www.facebook.com/" target="_blank"><img src="./MACOSX_/img/footer/logo_face.png" alt="logo facebook" style="width:29px;height:29px;"></a></div>
+          <div class="redes-1"><a href="https://www.instagram.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_insta.png" alt="logo instagram" style="width:29px;height:29px;"></a></div>
+          <div class="redes-1"><a href="https://twitter.com/"target="_blank"><img src="./MACOSX_/img/footer/logo_twitter.png" alt="logo twitter" style="width:29px;height:29px;"></a></div>
+          <div class="redes-1"><a href="https://wa.me/55229999999?text=Olá,%20GetPack!"target="_blank"><img src="./MACOSX_/img/footer/logo_whatsapp.png" alt="logo whatsapp" style="width:29px;height:29px;"></a></div>
             
         </div>
             
         <div class="contato">
-            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
-            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
-            <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
-            <p class="copy">Copyright 2022 ©</p>
-        </div>
+          <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_tel.png" alt="ícone de telefone">(22)222-2222<a class="ligar" href="tel:+55222222222">Ligar</a></p>
+          <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_e-mail.png" alt="ícone de e-mail "><a class="email" href="mailto:contato@gmail.com">contato@gmail.com</a></p>
+          <p><img class="icon-contato" src="./MACOSX_/img/footer/ico_localização.png" alt="ícone de localização">Rua das Palmeiras,123 - Centro</p>
+          <p class="copy">Copyright 2022 ©</p>
+      </div>
                                 
     </footer>
+  -->
+    <script src="assets/script.js"></script>
 </body>
 </html>

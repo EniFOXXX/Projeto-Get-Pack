@@ -1,51 +1,66 @@
 /*COR DE FUNDO E8E8F4, 343BCE*/
 
+@import url(../../styles/colors.css);
+
 *{
     font-family: Raleway;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 
+
+.carrossel{
+    position: relative;
+}
+
+/*HEADER-----------------------------*/
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: rgb(255, 255, 255);
-    
+    background-color: rgb(255, 255, 255);    
 }
 
 
-ul{
+header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    height: 70px;        
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+
+header ul{
+    display: flex;
+    list-style: inside none;
     height: 100%;
-    margin-right: 80px;
+    margin-right: 5rem;
 }
 
-
-.menu  li a{
-    font-weight: 700;
-    color: rgb(88, 143, 220);
-    text-decoration: none;    
-}
-
-li{
+header ul li a{
     list-style-type: none;
-    padding: 30px;    
-}
+    color: rgb(88, 143, 220);
+    padding: 5px;    
+    margin: 5px;  
+    text-decoration: none;  
+    font-size: 15px; 
+    font-weight: bold; 
+    margin-left: 0.5rem;   
+}    
 
 .menu ul li a:hover{
-    background-color: rgb(88, 143, 220); ;
+    background-color: rgb(88, 143, 220);
     border-radius: 10px;
-    color:white;
-    padding: px;
-    transition: 0.2s;    
+    color: white;
+    transition: 0.3s;    
 }
+
 
 .logo{
     padding-left: 20px;
@@ -60,8 +75,7 @@ li{
     background-image: linear-gradient(        
         #343BCE,
         #E8E8F4
-    );
-    
+    );    
 }
 
 /*CARROSSEL---------------------------*/
@@ -70,41 +84,85 @@ li{
     width: 1170px;
     height: 350px;    
     margin: auto;
-    background-image: url(../MACOSX_/img/main/carrossel.jpg);
+    background-image: url(../../../assets/images/img_blog/main/carrossel.jpg);
 }
 
-.slide1{    
+.container_top{    
     height: 350px;  
     width: 970px;  
     padding-top: 70px;
     padding-left: 70px;
     margin: auto;
     opacity: 50%;
-    background-image: linear-gradient(#44A4B5, #173D75);
-    
+    background-image: linear-gradient(#44A4B5, #173D75);    
+}
+
+.container_top{
+    display: none;
+}
+.container_top.active{
+    display: block;
 }
 
 
-
-.banner_tittle1{      
+.banner_tittle{      
     width: 430px;
     padding-bottom: 15px;    
     background-color:aqua;
 }
-.banner_text1{      
+.banner_text{      
     color: #fff;
     position: absolute;
 }
 
-.banner_bot{  
-    float: right;
-    border: 0;
-    margin-top: -45px;
-    margin-right: 20px;
-     
-    width: 70px;
-    height: 30px;     
-    
+.container_top .slide .banner_bot{  
+    margin-top: 120px;
+    display: inline-block;
+    background: #000;
+    color: #ffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border:2px solid #44A4B5;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;    
+}
+.container_top .banner_bot:hover{
+    background: #ffff;
+    border: 2px solid #44A4B5;
+    color: #000;
+}
+
+
+/*BOTÕES--------------------------*/
+
+.carrossel #prev, 
+.carrossel #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffff;
+    background: #44A4B5;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.carrossel #prev:hover, 
+.carrossel #next:hover{
+    background: #6bc3d4;
+}
+
+.carrossel #prev{
+    left: 20px;
+}
+.carrossel #next{
+    right: 20px;
 }
 
 /*BAND----------------------------*/
@@ -116,11 +174,11 @@ li{
     height: 185px;    
 }
 
-.container_band{      
-    width: 1170px;
+.container_band{   
     height: 550px;
+    width: 1170px;
     margin: auto;
-    background-image: url(../MACOSX_/img/main/fundo.jpg);
+    background-image: url(../../../assets/images/img_blog/main/fundo.jpg);
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -128,7 +186,7 @@ li{
 }
 
 .container_geral1{  
-    width: 975px;    
+    width: 900px;    
     display: flex;
     flex-direction: column;   
     align-items: center; 
@@ -230,10 +288,11 @@ s
 
 /*RODAPE--------------------*/
 
+/*
 footer{
     background-color: rgba(35, 91, 170, 0.818);
     height: 142px;
-    }
+}
 .redes{
     display: flex;
     justify-content: end;
@@ -268,3 +327,708 @@ footer{
     width:40px;
     height:40px;
 }
+
+*/
+
+
+.rodape{
+    background-color: rgba(35, 91, 170, 0.818);
+    display: flex;  
+    height:15vh;    
+    padding: 0 10px;
+}
+
+.copy_top{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;                
+}
+
+footer img{
+    width: 18px;
+    height: 18px;
+}
+  
+footer .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: inside none;
+    width: 10rem;
+    margin-left: 1.5rem;
+}
+  
+footer .contacts {    
+    list-style: inside none;
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    align-items: center;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+footer .contacts li{
+    height: 100%;
+    display: flex;
+    align-items: center;   
+}
+footer .contacts a{
+    text-decoration: none; 
+    color: rgb(00, 08, 43);
+    font-weight: bold;  
+}
+footer .contacts a, span{
+    text-decoration: none;
+    font-weight: bold;      
+}
+
+/*------------------*/
+
+
+
+
+/*PRIMEIRO POINT ------------------------------RESPONSIVO*/
+
+
+@media only screen and (max-width: 1186px) and (min-width: 900px){
+
+    *{
+        font-family: Raleway;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+    }
+
+    
+
+
+    /*HEADER-----------------------------*/
+
+    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;        
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+    }
+
+
+    header ul{
+        display: flex;
+        list-style: inside none;
+        height: 100%;
+        margin-right: 5rem;
+    }
+
+    header ul li a{
+        list-style-type: none;
+        color: rgb(88, 143, 220);
+        padding: 5px;    
+        margin: 5px;  
+        text-decoration: none;  
+        font-size: 15px; 
+        font-weight: bold; 
+        margin-left: 0.5rem;   
+    }    
+
+
+
+    .menu ul li a:hover{
+        background-color: rgb(88, 143, 220);
+        border-radius: 10px;
+        color: white;
+        transition: 0.3s;    
+    }
+
+    #logo{
+        width: 120px;
+        height: 33px;
+        margin-right: 7px;        
+    }
+
+
+
+    /*GERAL-----------------------------*/
+
+    .carrossel{
+        width: 884px;
+        height: 350px;    
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/carrossel.jpg);
+    }
+    
+    .container_top{    
+        height: 350px;  
+        width: 750px;  
+        padding-top: 70px;
+        padding-left: 70px;
+        margin: auto;
+        opacity: 50%;
+        background-image: linear-gradient(#44A4B5, #173D75);    
+    }
+    
+    .corpo{
+        margin: auto;
+    }
+    
+    .container_band{      
+        width: 884px;
+        height: 550px;
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/fundo.jpg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+          
+    }
+    
+    .container_geral1{  
+        width: 884px;    
+        display: flex;
+        flex-direction: column;   
+        align-items: center; 
+        justify-content: center;   
+            
+    }
+    
+    
+    .container_local1, .container_local2{   
+        width: 800px;
+        height: 250px;     
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);   
+    }
+
+    
+    .carrossel #prev{
+        left: 50px;
+    }
+    .carrossel #next{
+        right: 50px;
+    }
+
+    /*CORPO-------------------------------------------*/
+
+    .container_int1, 
+    .container_int2, 
+    .container_int3, 
+    .container_int4{  
+        margin: 1rem;
+        width: 330px;
+        height: 185px;  
+        background-color:crimson;  
+    }
+
+    /*LATERAL-------------------------------------------*/
+
+    .container_geral2{      
+        background-color: #000;
+        opacity: 65%;  
+        margin-right: 30px;
+        display: none;
+    }
+    .container_lad{
+        color: #fff;
+    }
+    
+    .container_lad strong, p{      
+        color: #fff;    
+        font-size: 15px;
+    }
+    .propag a{
+        text-align:  center;
+        margin: auto;
+        right: 50px;
+        text-decoration: none;
+        background-color: #6bc3d4;
+    }
+
+
+
+    /*RODAPÉ-------------------------------------------*/
+    
+    
+    footer {
+        background-color: rgba(35, 91, 170, 0.818);
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;
+        width: 10rem;
+        margin-left: 1.5rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }    
+
+}
+
+
+/*SEGUNDO POINT ------------------------------RESPONSIVO*/
+
+
+@media only screen and (max-width: 899px) and (min-width: 768px){
+
+    *{
+        font-family: Raleway;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+    }    
+
+    /*HEADER-----------------------------*/    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;        
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+    }
+
+
+    header ul{
+        display: flex;
+        list-style: inside none;
+        height: 100%;
+        margin-right: 5rem;
+    }
+
+    header ul li a{
+        list-style-type: none;
+        color: rgb(88, 143, 220);
+        padding: 5px;    
+        margin: 5px;  
+        text-decoration: none;  
+        font-size: 15px; 
+        font-weight: bold; 
+        margin-left: 0.5rem;   
+    }    
+
+
+
+    .menu ul li a:hover{
+        background-color: rgb(88, 143, 220);
+        border-radius: 10px;
+        color: white;
+        transition: 0.3s;    
+    }
+
+    #logo{
+        width: 120px;
+        height: 33px;
+        margin-right: 7px;        
+    }
+
+
+
+    /*GERAL-----------------------------*/
+
+    .carrossel{
+        width: 752px;
+        height: 350px;    
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/carrossel.jpg);
+    }
+    
+    .container_top{    
+        height: 350px;  
+        width: 680px;  
+        padding-top: 70px;
+        padding-left: 70px;
+        margin: auto;
+        opacity: 50%;
+        background-image: linear-gradient(#44A4B5, #173D75);    
+    }
+    
+    
+    
+    .container_band{      
+        width: 752px;
+        height: 550px;
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/fundo.jpg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+          
+    }
+    
+    .container_geral1{  
+        width: 752px;    
+        display: flex;
+        flex-direction: column;   
+        align-items: center; 
+        justify-content: center;   
+            
+    }
+    
+    
+    .container_local1, .container_local2{   
+        width: 680px;
+        height: 250px;     
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);   
+    }
+
+    
+    .carrossel #prev{
+        left: 50px;
+    }
+    .carrossel #next{
+        right: 50px;
+    }
+
+    /*CORPO-------------------------------------------*/
+
+    .container_int1, 
+    .container_int2, 
+    .container_int3, 
+    .container_int4{  
+        margin: 1rem;
+        width: 330px;
+        height: 185px;  
+        background-color:crimson;  
+    }
+
+    /*LATERAL-------------------------------------------*/
+
+    .container_geral2{      
+        background-color: #000;
+        opacity: 65%;  
+        margin-right: 30px;
+        display: none;
+    }
+    .container_lad{
+        color: #fff;
+    }
+    
+    .container_lad strong, p{      
+        color: #fff;    
+        font-size: 15px;
+    }
+    .propag a{
+        text-align:  center;
+        margin: auto;
+        right: 50px;
+        text-decoration: none;
+        background-color: #6bc3d4;
+    }
+
+
+
+    /*RODAPÉ-------------------------------------------*/
+    
+    
+    footer {
+        background-color: rgba(35, 91, 170, 0.818);
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;         
+        margin-left: 1.5rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }   
+
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 718px){
+
+    *{
+        font-family: Raleway;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+    }
+
+    
+
+
+    /*HEADER-----------------------------*/
+
+    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;        
+        background-color: rgb(255, 255, 255);        
+    }
+
+
+    header ul{
+        display: flex;
+        list-style: inside none;
+        height: 100%;
+        margin-right: 5rem;
+    }
+
+    header ul li a{
+        list-style-type: none;
+        color: rgb(88, 143, 220);
+        padding: 5px;    
+        margin: 5px;  
+        text-decoration: none;  
+        font-size: 15px; 
+        font-weight: bold; 
+        margin-left: 0.5rem;   
+    }    
+
+
+
+    .menu ul li a:hover{
+        background-color: rgb(88, 143, 220);
+        border-radius: 10px;
+        color: white;
+        transition: 0.3s;    
+    }
+
+    #logo{
+        width: 120px;
+        height: 33px;
+        margin-right: 7px;        
+    }
+
+
+
+    /*GERAL-----------------------------*/
+
+    .carrossel{
+        width: 650px;
+        height: 350px;    
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/carrossel.jpg);
+    }
+    
+    .container_top{    
+        height: 350px;  
+        width: 620px;  
+        padding-top: 70px;
+        padding-left: 70px;
+        margin: auto;
+        opacity: 50%;
+        background-image: linear-gradient(#44A4B5, #173D75);    
+    }
+    
+    
+    
+    .container_band{      
+        width: 650px;
+        height: 550px;
+        margin: auto;
+        background-image: url(../../../assets/images/img_blog/main/fundo.jpg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+          
+    }
+
+    .img_band_int{
+        width: 280px;
+        height: 185px;
+    }
+    
+    .container_geral1{  
+        width: 700px;    
+        display: flex;
+        flex-direction: column;   
+        align-items: center; 
+        justify-content: center;             
+    }
+    
+    
+    .container_local1, .container_local2{   
+        width: 620px;
+        height: 250px;     
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);   
+    }
+
+    
+    .carrossel #prev{
+        left: 50px;
+    }
+    .carrossel #next{
+        right: 50px;
+    }
+
+    /*CORPO-------------------------------------------*/
+
+    .container_int1, 
+    .container_int2, 
+    .container_int3, 
+    .container_int4{  
+        margin: 1rem;
+        width: 330px;
+        height: 185px;  
+        background-color:crimson;  
+    }
+
+    /*LATERAL-------------------------------------------*/
+
+    .container_geral2{      
+        background-color: #000;
+        opacity: 65%;  
+        margin-right: 30px;
+        display: none;
+    }
+    .container_lad{
+        color: #fff;
+    }
+    
+    .container_lad strong, p{      
+        color: #fff;    
+        font-size: 15px;
+    }
+    .propag a{
+        text-align:  center;
+        margin: auto;
+        right: 50px;
+        text-decoration: none;
+        background-color: #6bc3d4;
+    }
+
+
+
+    /*RODAPÉ-------------------------------------------*/
+    
+    
+    footer {
+        background-color: rgba(35, 91, 170, 0.818);
+        display: flex;
+        flex-direction: row;
+        height:15vh;
+        align-items: center;
+        padding: 0 10px;
+      }
+      
+      footer img{
+        width: 18px;
+        height: 18px;
+      }
+      
+      footer .logos {
+        display: flex;
+        justify-content: space-between;
+        list-style: inside none;
+        width: 10rem;
+        margin-left: 1.5rem;
+      }
+      
+      footer .contacts {
+        list-style: inside none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50rem;
+        align-items: center;
+        height: 100%;
+      }
+      
+      footer .contacts li{
+        height: 100%;
+        display: flex;
+        align-items: center;   
+      }
+      footer .contacts a{
+        text-decoration: none; 
+        color: rgb(00, 08, 43);
+        font-weight: bold;  
+      }
+      footer .contacts a, span{
+        text-decoration: none;
+        font-weight: bold;      
+      }    
+
+}
+
+
+/*TERCEIRO POINT ------------------------------RESPONSIVO*/
